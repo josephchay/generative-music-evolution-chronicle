@@ -1,3 +1,3 @@
-# Generate Music Evolution Chronicle
+# Chronicle of Generative Music Intelligence
 
 ---
