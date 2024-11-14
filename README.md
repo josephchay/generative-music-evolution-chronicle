@@ -38,6 +38,11 @@ The resources are organized in a chronological order.
     [Digital Copy](https://api.pageplace.de/preview/DT0400.9780190227005_A35478151/preview-9780190227005_A35478151.pdf)
 
 
+## Attributions
+
+1. Hernandez-Olivan, C., & Beltran, J. R. (2021, August 27). Music Composition with Deep Learning: A Review. arXiv.org. 
+    [Paper](https://arxiv.org/pdf/2108.12290)
+
 ## Contribution
 
 If you find any missing resources or would like to contribute to this repository, please feel free to open an issue or a pull request.
