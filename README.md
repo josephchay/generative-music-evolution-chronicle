@@ -23,6 +23,7 @@ The resources are organized in a reverse chronological order, starting from the 
      - [1989](#1989)
      - [1959](#1959)
   - [Deep Learning Models for Symbolic Music Generation](#deep-learning-models-for-symbolic-music-generation)
+    - [2024](#2024)
     - [2023](#2023)
     - [2022](#2022)
     - [2021](#2021)
@@ -34,13 +35,16 @@ The resources are organized in a reverse chronological order, starting from the 
     - [2002](#2002)
     - [1990s](#1990s)
   - [Audio Generation](#audio-generation)
+    - [2024](#2024-1)
     - [2023](#2023-1)
     - [2022](#2022-1)
     - [2021](#2021-1)
     - [2020](#2020-1)
     - [2017](#2017-1)
-  - [Textual Contexts & Language Model Integration](#textual-contexts--language-models-integration)
+  - [Tokenizers](#tokenizers)
     - [2024](#2024-2)
+  - [Textual Contexts & Language Model Integration](#textual-contexts--language-models-integration)
+    - [2024](#2024-3)
   - [Evaluation Methodologies](#evaluation-methodologies)
     - [2023](#2023-2)
 
@@ -103,12 +107,38 @@ The resources are organized in a reverse chronological order, starting from the 
 
 #### 2024
 
-1. Non-Differentiable Rule Guided Diffusion
+1. JEN-1 DreamStyler
+    - <img src="images/JEN-1-DreamStyler.jpg" alt="JEN-1 DreamStyler" width="60%"/>
+      <img src="images/JEN-1-DreamStyler-2.jpg" alt="JEN-1 DreamStyler" width="60%"/>
+      <img src="images/JEN-1-DreamStyler-3.jpg" alt="JEN-1 DreamStyler" width="60%"/>
+
+      Chen, B., Li, P., Yao, Y., & Wang, A. (2024, June 18). 
+      JEN-1 DreamStyler: Customized Musical Concept Learning via Pivotal Parameters Tuning. arXiv.org. 
+      [Paper](https://arxiv.org/abs/2406.12292) • [Samples](https://www.jenmusic.ai/research#DreamStyler)
+
+2. Wang, Z., Min, L., & Xia, G. (2024, May 16). 
+    Whole-Song Hierarchical Generation of Symbolic Music Using Cascaded Diffusion Models. arXiv.org. 
+    [Paper](https://arxiv.org/abs/2405.09901) • [GitHub and Model](https://github.com/ZZWaang/whole-song-gen) •
+    [Samples](https://wholesonggen.github.io/)
+
+3. COMPOSERX
+   - <img src="images/COMPOSERX.jpg" width="60%" alt="Image for Non-Differentiable Rule Guided Diffusion">
+     
+    Deng, Q., Yang, Q., Yuan, R., Huang, Y., Wang, Y., Liu, X., Tian, Z., Pan, J., ... (2024, April 28). 
+    ComposerX: Multi-Agent Symbolic Music Composition with LLMs. arXiv.org. 
+    [Paper](https://arxiv.org/abs/2404.18081)
+
+4. Non-Differentiable Rule Guided Diffusion
    - <img src="images/Non-Differentiable-Rule-Guided-Diffusion.jpg" width="60%" alt="Image for Non-Differentiable Rule Guided Diffusion">
      
      Huang, Y., Ghatare, A., Liu, Y., Hu, Z., Zhang, Q., Sastry, C. S., Gururani, S., Oore, S., & Yue, Y. (2024, February 22). 
      Symbolic Music Generation with Non-Differentiable Rule Guided Diffusion. arXiv.org. 
      [Paper](https://arxiv.org/abs/2402.14285)
+
+5. Surveys
+   - Le, D., Bigo, L., Keller, M., & Herremans, D. (2024, February 27). 
+   Natural Language Processing Methods for Symbolic Music Generation and Information Retrieval: a Survey. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2402.17467)
 
 #### 2023
 
@@ -161,7 +191,7 @@ The resources are organized in a reverse chronological order, starting from the 
    [GitHub](https://github.com/YatingMusic/compound-word-transformer)
 
 2. Melody Generation from Lyrics
-3. - <img src="images/Conditional-LSTM-GAN-for-Melody-Generation-from-Lyrics.jpg" width="60%" alt="Image for Conditional LSTM GAN for Melody Generation from Lyrics">
+    - <img src="images/Conditional-LSTM-GAN-for-Melody-Generation-from-Lyrics.jpg" width="60%" alt="Image for Conditional LSTM GAN for Melody Generation from Lyrics">
      
      Yu, Y., Srivastava, A., & Canales, S. (2021). Conditional lstm-gan for melody generation from lyrics. 
      ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 17(1), 1-20.
@@ -398,6 +428,30 @@ The resources are organized in a reverse chronological order, starting from the 
 ### Audio Generation
 
 #### 2024
+1. Long-Form Generation with Latent Diffusion
+    - <img src="images/Long-Form-Generation-with-Latent-Diffusion.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
+      <img src="images/Long-Form-Generation-with-Latent-Diffusion-2.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
+    
+      Evans, Z., Parker, J. D., Carr, C., Zukowski, Z., Taylor, J., & Pons, J. (2024, April 16). 
+      Long-form music generation with latent diffusion. arXiv.org.
+      [Paper](https://arxiv.org/abs/2404.10301) • [GitHub](https://github.com/Stability-AI/stable-audio-tools/) •
+      [Samples](https://stability-ai.github.io/stable-audio-2-demo/) • [Dataset](https://www.kaggle.com/datasets/yamaerenay/spotify-tracks-dataset-19222021)
+
+2. Tango 2
+    - <img src="images/Tango-2.jpg" width="60%" alt="Image for Tango 2">
+      <img src="images/Tango-2-2.jpg" width="60%" alt="Image for Tango 2">
+   
+      Majumder, N., Hung, C., Ghosal, D., Hsu, W., Mihalcea, R., & Poria, S. (2024, April 15). 
+      Tango 2: Aligning Diffusion-based Text-to-Audio Generations through Direct Preference Optimization. arXiv.org. 
+      [Paper](https://arxiv.org/abs/2404.09956)
+
+3. MusicHiFi
+   - Zhu, G., Caceres, J., Duan, Z., & Bryan, N. J. (2024, March 15). 
+     MusicHiFi: Fast High-Fidelity Stereo Vocoding. arXiv.org. 
+     [Paper](https://arxiv.org/abs/2403.10493) • [Samples](https://musichifi.github.io/web/) •
+     [Video](https://www.youtube.com/watch?v=iytPC_6OsiQ&feature=youtu.be)
+
+#### 2023
 
 1. Amphion
     - <img src="images/Amphion.jpg" width="60%" alt="Image for Amphion">
@@ -416,9 +470,7 @@ The resources are organized in a reverse chronological order, starting from the 
       [GitHub](https://github.com/AMAAI-Lab/mustango) • 
       [Demo & Dataset](https://huggingface.co/spaces/declare-lab/mustango)
 
-#### 2023
-
-1. Music ControlNet
+3. Music ControlNet
    - <img src="images/Music-ControlNet.jpg" width="60%" alt="Image for Music ControlNet">
      
      Wu, S., Donahue, C., Watanabe, S., & Bryan, N. J. (2023, November 13). 
@@ -426,14 +478,14 @@ The resources are organized in a reverse chronological order, starting from the 
      [Paper](https://arxiv.org/abs/2311.07069) • [Sample](https://musiccontrolnet.github.io/web/) • 
      [Video](https://www.youtube.com/watch?v=QVr-S-DyccU)
 
-2. JEN-1 Composer
+4. JEN-1 Composer
     - <img src="images/JEN-1-Composer.jpg" width="60%" alt="Image for JEN-1 Composer">
       
       Yao, Y., Li, P., Chen, B., & Wang, A. (2023, October 29). JEN-1 Composer: 
       A Unified Framework for High-Fidelity Multi-Track Music Generation. arXiv.org. 
       [Paper](https://arxiv.org/abs/2310.19180)
 
-3. Music Understanding LLaMA
+5. Music Understanding LLaMA
 
    - <img src="images/Music-Understanding-LLaMA.jpg" width="60%" alt="Image for Music Understanding LLaMA">
      <img src="images/Music-Understanding-LLaMA-2.jpg" width="60%" alt="Image for Music Understanding LLaMA 2">
@@ -442,13 +494,13 @@ The resources are organized in a reverse chronological order, starting from the 
      Music Understanding LLaMA: Advancing Text-to-Music Generation with Question Answering and Captioning. arXiv.org.
      [Paper](https://arxiv.org/abs/2308.11276)
 
-4. AudioLDM2
+6. AudioLDM2
    Liu, H., Yuan, Y., Liu, X., Mei, X., Kong, Q., Tian, Q., Wang, Y., Wang, W., Wang, Y., & Plumbley, M. D. (2023, August 10).
    AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining. arXiv.org.
    [Paper](https://arxiv.org/abs/2308.05734) • 
    [Samples](https://audioldm.github.io/audioldm2/) • [GitHub](https://github.com/haoheliu/audioldm2)
 
-5. JEN-1
+7. JEN-1
    - <img src="images/JEN-1.jpg" width="60%" alt="Image for JEN-1">
       <img src="images/JEN-1-2.jpg" width="60%" alt="Image for JEN-1 2">
      
@@ -456,7 +508,7 @@ The resources are organized in a reverse chronological order, starting from the 
       JEN-1: Text-Guided Universal Music Generation with Omnidirectional Diffusion Models. arXiv.org.
       [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
 
-6. MusiCLDM
+8. MusiCLDM
    - <img src="images/MusicLDM.jpg" width="60%" alt="Image for MusiCLDM">
      <img src="images/MusicLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
       
@@ -464,42 +516,42 @@ The resources are organized in a reverse chronological order, starting from the 
       MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup Strategies. arXiv.org. 
       [Paper](https://arxiv.org/abs/2308.01546)
 
-7. High-Fidelity Multi-Band Diffusion
+9. High-Fidelity Multi-Band Diffusion
    - <img src="images/High-Fidelity-Multi-Band-Diffusion.jpg" width="60%" alt="Image for High-Fidelity Multi-Band Diffusion">
      
      Roman, R. S., Adi, Y., Deleforge, A., Serizel, R., Synnaeve, G., & Défossez, A. (2023, August 2). 
      From Discrete Tokens to High-Fidelity Audio Using Multi-Band Diffusion. arXiv.org. 
      [Paper](https://arxiv.org/abs/2308.02560)
 
-8. VALL-E-X
-   - <img src="images/VALL-E-X.jpg" width="60%" alt="Image for VALL-E-X">
+10. VALL-E-X
+    - <img src="images/VALL-E-X.jpg" width="60%" alt="Image for VALL-E-X">
      
-     Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023). 
-     Speak Foreign Languages with Your Own Voice: Cross-Lingual Neural Codec Language Modeling. arXiv preprint arXiv:2303.03926.
-     [Paper](https://arxiv.org/abs/2303.03926)
+      Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023). 
+      Speak Foreign Languages with Your Own Voice: Cross-Lingual Neural Codec Language Modeling. arXiv preprint arXiv:2303.03926.
+      [Paper](https://arxiv.org/abs/2303.03926)
 
-9. ERNIE-Music
-   - <img src="images/ERNIE-Music.jpg" width="60%" alt="Image for ERNIE-Music">
+11. ERNIE-Music
+    - <img src="images/ERNIE-Music.jpg" width="60%" alt="Image for ERNIE-Music">
      
-     Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023). 
-     ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
-     [Paper](https://arxiv.org/abs/2302.04456)
+      Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023). 
+      ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
+      [Paper](https://arxiv.org/abs/2302.04456)
 
-10. Multi-Source Diffusion Models
+12. Multi-Source Diffusion Models
     - <img src="images/Multi-Source-Diffusion-Models.jpg" width="60%" alt="Image for Multi-Source Diffusion Models">
      
       Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
       Multi-Source Diffusion Models for Simultaneous Music Generation and Separation. arXiv preprint arXiv:2302.02257.
       [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
 
-11. SingSong
+13. SingSong
     - <img src="images/SingSong.jpg" width="60%" alt="Image for SingSong">
 
        Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023). 
        SingSong: Generating musical accompaniments from singing. arXiv preprint arXiv:2301.12662.
        [Paper](https://arxiv.org/abs/2301.12662) • [Samples](https://storage.googleapis.com/sing-song/index.html)
 
-12. AudioLDM
+14. AudioLDM
     - <img src="images/AudioLDM.jpg" width="60%" alt="Image for AudioLDM">
 
        Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023). 
@@ -507,7 +559,7 @@ The resources are organized in a reverse chronological order, starting from the 
        [Paper](https://arxiv.org/abs/2301.12503) • [Samples](https://audioldm.github.io/) • 
       [GitHub](https://github.com/haoheliu/AudioLDM)
 
-13. Mousai
+15. Mousai
     - <img src="images/Mousai.jpg" width="60%" alt="Image for Mousai">
       <img src="images/Mousai-2.jpg" width="60%" alt="Image for Mousai">
       <img src="images/Mousai-3.jpg" width="60%" alt="Image for Mousai">
@@ -517,27 +569,27 @@ The resources are organized in a reverse chronological order, starting from the 
       arXiv preprint arXiv:2301.11757.
       [Paper](https://arxiv.org/abs/2301.11757)
 
-14. Make-An-Audio
+16. Make-An-Audio
     - <img src="images/Make-An-Audio.jpg" width="60%" alt="Image for Make-An-Audio">
      
       Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023). 
       Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models. arXiv preprint arXiv:2301.12661.
       [Paper](https://arxiv.org/abs/2301.12661) • [Samples](https://text-to-audio.github.io/)
 
-15. Noise2Music
+17. Noise2Music
     - <img src="images/Noise2Music.jpg" width="60%" alt="Image for Noise2Music">
 
       Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023). 
       Noise2Music: Text-conditioned Music Generation with Diffusion Models. arXiv preprint arXiv:2302.03917.
       [Paper](https://arxiv.org/abs/2302.03917) • [Samples](https://google-research.github.io/noise2music/)
 
-16. Msanii
+18. Msanii
     - <img src="images/Msanii.jpg" width="60%" alt="Image for Msanii">
 
       Maina, K. (2023). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
       [Paper](https://arxiv.org/abs/2301.06468)
 
-17. MusicLM
+19. MusicLM
     - <img src="images/MusicLM.jpg" width="60%" alt="Image for MusicLM">
      
       Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023). 
@@ -589,6 +641,24 @@ The resources are organized in a reverse chronological order, starting from the 
 
 ---
 
+### Tokenizers
+
+#### 2024
+
+1. WavTokenizer
+    - Ji, S., Jiang, Z., Wang, W., Chen, Y., Fang, M., Zuo, J., Yang, Q., ... (2024, August 29). 
+    WavTokenizer: an Efficient Acoustic Discrete Codec Tokenizer for Audio Language Modeling. arXiv.org. 
+    [Paper](https://arxiv.org/abs/2408.16532) • [GitHub](https://github.com/jishengpeng/WavTokenizer)
+
+2. FluxMusic
+   - <img src="images/FluxMusic.jpg" width="60%" alt="Image for SongComposer">
+
+     Fei, Z., Fan, M., Yu, C., & Huang, J. (2024, September 1). 
+     FLUX that Plays Music. arXiv.org. 
+     [Paper](https://arxiv.org/abs/2409.00587) • [GitHub](https://github.com/feizc/FluxMusic)
+
+---
+
 ### Textual Contexts / Language Models Integration
 
 #### 2024
@@ -600,7 +670,15 @@ The resources are organized in a reverse chronological order, starting from the 
    SongComposer: A Large Language Model for Lyric and Melody Composition in Song Generation. arXiv.org. 
    [Paper](https://arxiv.org/abs/2402.17645)
 
-1. MusicAgent - Microsoft
+2. ChatMusician
+    - <img src="images/ChatMusician.jpg" width="60%" alt="Image for ChatMusician">
+      <img src="images/ChatMusician-2.jpg" width="60%" alt="Image for ChatMusician 2">
+    
+      Yuan, R., Lin, H., Wang, Y., Tian, Z., Wu, S., Shen, T., Zhang, G., Wu, Y., Liu, C., Zhou, Z., ... (2024, February 25). 
+      ChatMusician: Understanding and Generating Music Intrinsically with LLM. arXiv.org. 
+      [Paper](https://arxiv.org/abs/2402.16153)
+
+3. MusicAgent - Microsoft
    - <img src="images/MusicAgent-Microsoft.jpg" width="60%" alt="Image for MusicAgent - Microsoft">
      <img src="images/MusicAgent-Microsoft-2.jpg" width="60%" alt="Image for MusicAgent - Microsoft 2">
      <img src="images/MusicAgent-Microsoft-3.jpg" width="60%" alt="Image for MusicAgent - Microsoft 3">
@@ -610,7 +688,7 @@ The resources are organized in a reverse chronological order, starting from the 
      MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models. arXiv.org. 
      [Paper](https://arxiv.org/abs/2310.11954)
 
-1. MusiLingo
+4. MusiLingo
     - <img src="images/MusiLingo.jpg " width="60%" alt="Image for MusiLingo">
 
       Deng, Z., Ma, Y., Liu, Y., Guo, R., Zhang, G., Chen, W., Huang, W., & Benetos, E. (2023, September 15). 
