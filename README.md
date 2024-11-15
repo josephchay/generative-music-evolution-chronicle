@@ -5,7 +5,7 @@
 ![logo](images/logo.png)
 
 > [!NOTE]
-> _Last updated: 15th November 2024_
+> _Last updated: 16th November 2024_
 
 ---
 
@@ -96,7 +96,16 @@ This repository is licensed under the [MIT License](./LICENSE).
 
 #### 2024
 
-1. FluxMusic
+1. SongCreator
+    - <img src="images/SongCreator.jpg" width="60%" alt="Image for SongCreator">
+      <img src="images/SongCreator-2.jpg" width="60%" alt="Image for SongCreator 2">
+
+      Lei, S., Zhou, Y., Tang, B., Lam, M. W. Y., ... (2024, October 30). 
+      SongCreator: Lyrics-based Universal Song Generation. arXiv.org.
+     
+      [Paper](https://arxiv.org/abs/2409.06029) • [Samples](https://thuhcsi.github.io/SongCreator/)
+
+2. FluxMusic
    - <img src="images/FluxMusic.jpg" width="60%" alt="Image for SongComposer">
 
      Fei, Z., Fan, M., Yu, C., & Huang, J. (2024, September 1). 
@@ -104,7 +113,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      
      [Paper](https://arxiv.org/abs/2409.00587) • [GitHub](https://github.com/feizc/FluxMusic)
 
-2. Long-Form Generation with Latent Diffusion
+3. Long-Form Generation with Latent Diffusion
     - <img src="images/Long-Form-Generation-with-Latent-Diffusion.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
       <img src="images/Long-Form-Generation-with-Latent-Diffusion-2.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
     
@@ -114,7 +123,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       [Paper](https://arxiv.org/abs/2404.10301) • [GitHub](https://github.com/Stability-AI/stable-audio-tools/) •
       [Samples](https://stability-ai.github.io/stable-audio-2-demo/) • [Dataset](https://www.kaggle.com/datasets/yamaerenay/spotify-tracks-dataset-19222021)
 
-3. Tango 2
+4. Tango 2
     - <img src="images/Tango-2.jpg" width="60%" alt="Image for Tango 2">
       <img src="images/Tango-2-2.jpg" width="60%" alt="Image for Tango 2">
    
@@ -123,7 +132,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2404.09956)
 
-4. Multi-Source Diffusion Models
+5. Multi-Source Diffusion Models
    - <img src="images/Multi-Source-Diffusion-Models.jpg" width="60%" alt="Image for Multi-Source Diffusion Models">
      
      Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
@@ -131,7 +140,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
      [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
 
-5. MusicHiFi
+6. MusicHiFi
    - Zhu, G., Caceres, J., Duan, Z., & Bryan, N. J. (2024, March 15). 
      MusicHiFi: Fast High-Fidelity Stereo Vocoding. arXiv.org. 
      
@@ -149,7 +158,17 @@ This repository is licensed under the [MIT License](./LICENSE).
       [Paper](https://arxiv.org/search/?query=music+generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=400) •
       [GitHub](https://github.com/open-mmlab/Amphion)
 
-2. Mustango
+2. UniAudio
+    - <img src="images/UniAudio.jpg" width="60%" alt="Image for UniAudio"> 
+      <img src="images/UniAudio-2.jpg" width="60%" alt="Image for UniAudio 2">
+      <img src="images/UniAudio-3.jpg" width="60%" alt="Image for UniAudio 3">
+      
+      Yang, D., Tian, J., Tan, X., ... (2023, October 1). 
+      UniAudio: An Audio Foundation Model Toward Universal Audio Generation. arXiv.org. 
+      
+      [Paper](https://arxiv.org/abs/2310.00704) • [GitHub](https://github.com/uniaudio666/UniAudio) • [Samples](https://uniaudio666.github.io/demo_UniAudio/)
+
+3. Mustango
    - <img src="images/Mustango.jpg" width="60%" alt="Image for Mustango">
      
      Melechovsky, J., Guo, Z., Ghosal, D., Majumder, N., Herremans, D., & Poria, S. (2023, November 14). 
@@ -159,7 +178,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      [GitHub](https://github.com/AMAAI-Lab/mustango) • 
      [Demo & Dataset](https://huggingface.co/spaces/declare-lab/mustango)
 
-3. Music ControlNet
+4. Music ControlNet
    - <img src="images/Music-ControlNet.jpg" width="60%" alt="Image for Music ControlNet">
      
      Wu, S., Donahue, C., Watanabe, S., & Bryan, N. J. (2023, November 13).
@@ -168,7 +187,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      [Paper](https://arxiv.org/abs/2311.07069) • [Sample](https://musiccontrolnet.github.io/web/) • 
      [Video](https://www.youtube.com/watch?v=QVr-S-DyccU)
 
-4. JEN-1 Composer
+5. JEN-1 Composer
     - <img src="images/JEN-1-Composer.jpg" width="60%" alt="Image for JEN-1 Composer">
       
       Yao, Y., Li, P., Chen, B., & Wang, A. (2023, October 29). JEN-1 Composer: 
@@ -176,7 +195,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2310.19180)
 
-5. Mousai
+6. Mousai
    - <img src="images/Mousai.jpg" width="60%" alt="Image for Mousai">
      <img src="images/Mousai-2.jpg" width="60%" alt="Image for Mousai">
      <img src="images/Mousai-3.jpg" width="60%" alt="Image for Mousai">
@@ -187,7 +206,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
      [Paper](https://arxiv.org/abs/2301.11757)
 
-6. ERNIE-Music
+7. ERNIE-Music
    - <img src="images/ERNIE-Music.jpg" width="60%" alt="Image for ERNIE-Music">
      
      Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023, September 21). 
@@ -195,7 +214,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
      [Paper](https://arxiv.org/abs/2302.04456)
 
-7. AudioLDM
+8. AudioLDM
    - <img src="images/AudioLDM.jpg" width="60%" alt="Image for AudioLDM">
 
       Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023, September 9). 
@@ -204,7 +223,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       [Paper](https://arxiv.org/abs/2301.12503) • [Samples](https://audioldm.github.io/) • 
       [GitHub](https://github.com/haoheliu/AudioLDM)
 
-8. Music Understanding LLaMA
+9. Music Understanding LLaMA
 
    - <img src="images/Music-Understanding-LLaMA.jpg" width="60%" alt="Image for Music Understanding LLaMA">
      <img src="images/Music-Understanding-LLaMA-2.jpg" width="60%" alt="Image for Music Understanding LLaMA 2">
@@ -214,14 +233,14 @@ This repository is licensed under the [MIT License](./LICENSE).
      
      [Paper](https://arxiv.org/abs/2308.11276)
 
-9. AudioLDM2
-   Liu, H., Yuan, Y., Liu, X., Mei, X., Kong, Q., Tian, Q., Wang, Y., Wang, W., Wang, Y., & Plumbley, M. D. (2023, August 10).
-   AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining. arXiv.org.
+10. AudioLDM2
+    Liu, H., Yuan, Y., Liu, X., Mei, X., Kong, Q., Tian, Q., Wang, Y., Wang, W., Wang, Y., & Plumbley, M. D. (2023, August 10).
+    AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining. arXiv.org.
    
-   [Paper](https://arxiv.org/abs/2308.05734) • 
-   [Samples](https://audioldm.github.io/audioldm2/) • [GitHub](https://github.com/haoheliu/audioldm2)
+    [Paper](https://arxiv.org/abs/2308.05734) • 
+    [Samples](https://audioldm.github.io/audioldm2/) • [GitHub](https://github.com/haoheliu/audioldm2)
 
-10. JEN-1
+11. JEN-1
     - <img src="images/JEN-1.jpg" width="60%" alt="Image for JEN-1">
        <img src="images/JEN-1-2.jpg" width="60%" alt="Image for JEN-1 2">
      
@@ -230,7 +249,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
        [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
 
-11. MusiCLDM
+12. MusiCLDM
     - <img src="images/MusicLDM.jpg" width="60%" alt="Image for MusiCLDM">
       <img src="images/MusicLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
       
@@ -239,7 +258,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2308.01546)
 
-12. High-Fidelity Multi-Band Diffusion
+13. High-Fidelity Multi-Band Diffusion
     - <img src="images/High-Fidelity-Multi-Band-Diffusion.jpg" width="60%" alt="Image for High-Fidelity Multi-Band Diffusion">
      
       Roman, R. S., Adi, Y., Deleforge, A., Serizel, R., Synnaeve, G., & Défossez, A. (2023, August 2). 
@@ -247,7 +266,39 @@ This repository is licensed under the [MIT License](./LICENSE).
      
       [Paper](https://arxiv.org/abs/2308.02560)
 
-13. VALL-E-X
+14. NaturalSpeech 2
+    - <img src="images/NaturalSpeech2.jpg" width="60%" alt="Image for NaturalSpeech 2">
+      <img src="images/NaturalSpeech2-2.jpg" width="60%" alt="Image for NaturalSpeech 2 2">
+      <img src="images/NaturalSpeech2-3.jpg" width="60%" alt="Image for NaturalSpeech 2 3">
+      
+      Shen, K., Ju, Z., Tan, X., ... (2023, May 30). 
+      NaturalSpeech 2: Latent Diffusion Models are Natural and Zero-Shot Speech and Singing Synthesizers. arXiv.org.
+      
+      [Paper](https://arxiv.org/abs/2304.09116) • [Samples](https://speechresearch.github.io/naturalspeech2/)
+
+15. Make-An-Audio 2
+    - <img src="images/Make-An-Audio2.jpg" width="60%" alt="Image for Make-An-Audio 2">
+      <img src="images/Make-An-Audio2-2.jpg" width="60%" alt="Image for Make-An-Audio 2 2"> 
+    
+      Huang, J., Ren, Y., Huang, R., Yang, D., Ye, Z., Zhang, C., Liu, J., Yin, X., Ma, Z., & Zhao, Z. (2023, May 29). 
+      Make-An-Audio 2: Temporal-Enhanced Text-to-Audio Generation. arXiv.org. 
+      
+      [Paper](https://arxiv.org/abs/2305.18474) • [GitHub](https://github.com/bytedance/Make-An-Audio-2)
+
+16. SoundStorm 
+    - <img src="images/SoundStorm.jpg" width="60%" alt="Image for SoundStorm">
+     
+      Borsos, Z., Sharifi, M., Vincent, D., Kharitonov, E., Zeghidour, N., & Tagliasacchi, M. (2023, May 16). 
+      SoundStorm: Efficient Parallel Audio Generation. arXiv.org. 
+      
+      [Paper](https://arxiv.org/abs/2305.09636https://arxiv.org/abs/2305.09636)
+
+17. Bark 
+    - Bark: Text-Prompted Generative Audio Model (2023, April 10)
+      
+      [GitHub](https://github.com/suno-ai/bark) • [Samples](https://huggingface.co/spaces/suno/bark)
+
+18. VALL-E-X
     - <img src="images/VALL-E-X.jpg" width="60%" alt="Image for VALL-E-X">
      
       Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023, March 7). 
@@ -255,7 +306,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2303.03926)
 
-14. Noise2Music
+19. Noise2Music
     - <img src="images/Noise2Music.jpg" width="60%" alt="Image for Noise2Music">
 
       Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023, March 6). 
@@ -263,7 +314,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2302.03917) • [Samples](https://google-research.github.io/noise2music/)
 
-15. SingSong
+20. SingSong
     - <img src="images/SingSong.jpg" width="60%" alt="Image for SingSong">
 
        Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023, January 30). 
@@ -271,7 +322,7 @@ This repository is licensed under the [MIT License](./LICENSE).
        
        [Paper](https://arxiv.org/abs/2301.12662) • [Samples](https://storage.googleapis.com/sing-song/index.html)
 
-16. Make-An-Audio
+21. Make-An-Audio
     - <img src="images/Make-An-Audio.jpg" width="60%" alt="Image for Make-An-Audio">
      
       Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023, January 30). 
@@ -279,7 +330,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2301.12661) • [Samples](https://text-to-audio.github.io/)
 
-17. MusicLM
+22. MusicLM
     - <img src="images/MusicLM.jpg" width="60%" alt="Image for MusicLM">
      
       Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023, January 26). 
@@ -288,7 +339,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       [Paper](https://arxiv.org/abs/2301.11325) • [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
       [Dataset](https://www.kaggle.com/datasets/googleai/musiccaps)
 
-18. Msanii
+23. Msanii
     - <img src="images/Msanii.jpg" width="60%" alt="Image for Msanii">
 
       Maina, K. (2023, January 16). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
