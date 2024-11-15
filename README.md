@@ -456,8 +456,8 @@ The resources are organized in a reverse chronological order, starting from the 
       [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
 
 6. MusiCLDM
-   - <img src="images/MusiCLDM.jpg" width="60%" alt="Image for MusiCLDM">
-     <img src="images/MusiCLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
+   - <img src="images/MusicLDM.jpg" width="60%" alt="Image for MusiCLDM">
+     <img src="images/MusicLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
       
      Chen, K., Wu, Y., Liu, H., Nezhurina, M., Berg-Kirkpatrick, T., & Dubnov, S. (2023, August 3). 
       MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup Strategies. arXiv.org. 
