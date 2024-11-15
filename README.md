@@ -14,19 +14,12 @@ The resources are organized in a chronological order.
 
   - [Algorithmic Composition](#algorithmic-composition)
      - [1959](#1959)
-        - [Experimental Music](#experimental-music)
      - [1989](#1989)
-        - [A Connectionist Approach to Algorithmic Composition](#a-connectionist-approach-to-algorithmic-composition)
      - [1992](#1992)
-        - [HARMONET](#harmonet)
      - [2000](#2000)
-        - [The Algorithmic Composer](#the-algorithmic-composer)
      - [2009](#2009)
-        - [Paradigms of Automated Music Generation](#paradigms-of-automated-music-generation)
      - [2015](#2015)
-        - [Fundamentals of Music Processing](#fundamentals-of-music-processing)
      - [2018](#2018)
-        - [The Oxford Handbook of Algorithmic Music](#the-oxford-handbook-of-algorithmic-music)
 
 ## Resources
 
