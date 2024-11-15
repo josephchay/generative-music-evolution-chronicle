@@ -39,6 +39,9 @@ The resources are organized in a reverse chronological order, starting from the 
     - [2021](#2021-1)
     - [2020](#2020-1)
     - [2017](#2017-1)
+  - [Textual Contexts & Language Model Integration](#textual-contexts--language-models-integration)
+  - [Evaluation Methodologies](#evaluation-methodologies)
+    - [2023](#2023-2)
 
 ## Resources
 
@@ -97,6 +100,14 @@ The resources are organized in a reverse chronological order, starting from the 
 
 ### Deep Learning Models for Symbolic Music Generation
 
+#### 2024
+
+1. Non-Differentiable Rule Guided Diffusion
+   - ![image](images/Non-Differentiable-Rule-Guided-Diffusion.jpg)
+   Huang, Y., Ghatare, A., Liu, Y., Hu, Z., Zhang, Q., Sastry, C. S., Gururani, S., Oore, S., & Yue, Y. (2024, February 22). 
+   Symbolic Music Generation with Non-Differentiable Rule Guided Diffusion. arXiv.org.
+   [Paper](https://arxiv.org/abs/2402.14285) 
+
 #### 2023
 
 1. RL-Chord
@@ -113,7 +124,7 @@ The resources are organized in a reverse chronological order, starting from the 
 1. Museformer
    - Yu, B., Lu, P., Wang, R., Hu, W., Tan, X., Ye, W., ... & Liu, T. Y. (2022). 
    Museformer: Transformer with Fine-and Coarse-Grained Attention for Music Generation. NIPS 2022.
-   [Paper](https://openreview.net/forum?id=GFiqdZOm-Ei) [NIPS Presentation](https://nips.cc/virtual/2022/poster/54604)
+   [Paper](https://openreview.net/forum?id=GFiqdZOm-Ei) • [NIPS Presentation](https://nips.cc/virtual/2022/poster/54604)
 
 2. Bar Transformer 
    - Qin, Y., Xie, H., Ding, S., Tan, B., Li, Y., Zhao, B., & Ye, M. (2022). 
@@ -124,7 +135,7 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/Symphony-Generation-with-Permutation-Invariant-Language-Model.jpg)
    Liu, J., Dong, Y., Cheng, Z., Zhang, X., Li, X., Yu, F., & Sun, M. (2022). 
    Symphony Generation with Permutation Invariant Language Model.
-   [Paper](https://arxiv.org/pdf/2205.05448) [Code](https://github.com/symphonynet/SymphonyNet) 
+   [Paper](https://arxiv.org/pdf/2205.05448) • [Code](https://github.com/symphonynet/SymphonyNet) •
    [Samples](https://symphonynet.github.io/)
 
 4. Theme Transformer
@@ -132,7 +143,7 @@ The resources are organized in a reverse chronological order, starting from the 
    Shih, Y. J., Wu, S. L., Zalkow, F., Muller, M., & Yang, Y. H. (2022). 
    Theme Transformer: Symbolic Music Generation with Theme-Conditioned Transformer. 
    IEEE Transactions on Multimedia. 
-   [Paper](https://arxiv.org/abs/2111.04093) [GitHub](https://github.com/atosystem/ThemeTransformer)
+   [Paper](https://arxiv.org/abs/2111.04093) • [GitHub](https://github.com/atosystem/ThemeTransformer)
 
 #### 2021
 
@@ -140,7 +151,7 @@ The resources are organized in a reverse chronological order, starting from the 
    - Hsiao, W. Y., Liu, J. Y., Yeh, Y. C., & Yang, Y. H. (2021, May). Compound word transformer: 
    Learning to compose full-song music over dynamic directed hypergraphs. 
    In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 1, pp. 178-186).
-   [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/16091) 
+   [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/16091) •
    [GitHub](https://github.com/YatingMusic/compound-word-transformer)
 
 2. Melody Generation from Lyrics
@@ -153,7 +164,7 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/Music-Generation-with-Diffusion-Models.jpg)
    Mittal, G., Engel, J., Hawthorne, C., & Simon, I. (2021). 
    Symbolic music generation with diffusion models. arXiv preprint arXiv:2103.16091.
-   [Paper](https://arxiv.org/abs/2103.16091) [GitHub](https://github.com/magenta/symbolic-music-diffusion)
+   [Paper](https://arxiv.org/abs/2103.16091) • [GitHub](https://github.com/magenta/symbolic-music-diffusion)
 
 4. Reviews
    - Hernandez-Olivan, C., & Beltran, J. R. (2021). Music composition with deep learning: A review. 
@@ -166,19 +177,19 @@ The resources are organized in a reverse chronological order, starting from the 
    - Huang, Y. S., & Yang, Y. H. (2020, October). Pop music transformer:
    Beat-based modeling and generation of expressive pop piano compositions. 
    In Proceedings of the 28th ACM International Conference on Multimedia (pp. 1180-1188).
-   [Paper](https://dl.acm.org/doi/abs/10.1145/3394171.3413671) [GitHub](https://github.com/YatingMusic/remi)
+   [Paper](https://dl.acm.org/doi/abs/10.1145/3394171.3413671) • [GitHub](https://github.com/YatingMusic/remi)
 
 2. Controllable Polyphonic Music Generation
    - ![image](images/Controllable-Polyphonic-Music-Generation.jpg)
    Wang, Z., Wang, D., Zhang, Y., & Xia, G. (2020). Learning interpretable representation for controllable polyphonic music generation. 
    arXiv preprint arXiv:2008.07122.
-   [Paper](https://arxiv.org/abs/2008.07122) [Web](https://program.ismir2020.net/poster_5-05.html) [Video](https://www.youtube.com/watch?v=Sb6jXP_7dtE&t=28s&ab_channel=ISMIR2020)
+   [Paper](https://arxiv.org/abs/2008.07122) • [Web](https://program.ismir2020.net/poster_5-05.html) • [Video](https://www.youtube.com/watch?v=Sb6jXP_7dtE&t=28s&ab_channel=ISMIR2020)
 
 3. Multitrack Music Generation 
    - ![image](images/Multitrack-Music-Generation.jpg)
    Ens, J., & Pasquier, P. (2020). Mmm: Exploring conditional multi-track music generation with the transformer. 
    arXiv preprint arXiv:2008.06048.
-   [Paper](https://arxiv.org/abs/2008.06048) [Web](https://jeffreyjohnens.github.io/MMM/) [Colab](https://colab.research.google.com/drive/1xGZW3GP24HUsxnbebqfy1iCyYySQ64Vs?usp=sharing) [Github (AI Guru)](https://github.com/AI-Guru/MMM-JSB)
+   [Paper](https://arxiv.org/abs/2008.06048) • [Web](https://jeffreyjohnens.github.io/MMM/) • [Colab](https://colab.research.google.com/drive/1xGZW3GP24HUsxnbebqfy1iCyYySQ64Vs?usp=sharing) [Github (AI Guru)](https://github.com/AI-Guru/MMM-JSB)
 
 4. Transformer-XL
    - ![image](images/Transformer-XL.jpg)
@@ -225,7 +236,7 @@ The resources are organized in a reverse chronological order, starting from the 
 5. Coconet: Counterpoint by Convolution 
    - ![image](images/Coconet-Counterpoint-by-Convolution.jpg)
    Huang, C. Z. A., Cooijmans, T., Roberts, A., Courville, A., & Eck, D. (2019). Counterpoint by convolution. arXiv preprint arXiv:1903.07227.
-   [Paper](https://arxiv.org/abs/1903.07227) [Web](https://coconets.github.io/)
+   [Paper](https://arxiv.org/abs/1903.07227) • [Web](https://coconets.github.io/)
 
 6. Reviews
    - Briot, J. P., Hadjeres, G., & Pachet, F. D. (2017). Deep learning techniques for music generation--a survey. arXiv preprint arXiv:1709.01620.
@@ -238,7 +249,7 @@ The resources are organized in a reverse chronological order, starting from the 
    ![image](images/Music-Transformer-Google-Magenta-2.jpg)
    Huang, C. Z. A., Vaswani, A., Uszkoreit, J., Shazeer, N., Simon, I., Hawthorne, et al. (2018). 
    Music transformer. arXiv preprint arXiv:1809.04281.
-   [Web](https://magenta.tensorflow.org/music-transformer) [Paper](https://arxiv.org/pdf/1809.04281.pdf)
+   [Web](https://magenta.tensorflow.org/music-transformer) • [Paper](https://arxiv.org/pdf/1809.04281.pdf)
 
 2. Imposing Higher-Level Structure in Polyphonic Music
    - ![image](images/Higher-Level-Structure-in-Polyphonic-Music.jpg)
@@ -250,8 +261,8 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/Hierarchical-Latent-Vector-Model.jpg)
    Roberts, A., Engel, J., Raffel, C., Hawthorne, C., & Eck, D. (2018, July). 
    A hierarchical latent vector model for learning long-term structure in music. In International Conference on Machine Learning (pp. 4364-4373). PMLR.
-   [Web](https://magenta.tensorflow.org/music-vae) [Paper](https://arxiv.org/pdf/1803.05428.pdf) 
-   [Code](https://github.com/tensorflow/magenta/tree/master/magenta/models/music_vae) [Google Colab](https://colab.research.google.com/notebooks/magenta/music_vae/music_vae.ipynb) [Explanation](https://medium.com/@musicvaeubcse/musicvae-understanding-of-the-googles-work-for-interpolating-two-music-sequences-621dcbfa307c)
+   [Web](https://magenta.tensorflow.org/music-vae) • [Paper](https://arxiv.org/pdf/1803.05428.pdf) 
+   [Code](https://github.com/tensorflow/magenta/tree/master/magenta/models/music_vae) • [Google Colab](https://colab.research.google.com/notebooks/magenta/music_vae/music_vae.ipynb) [Explanation](https://medium.com/@musicvaeubcse/musicvae-understanding-of-the-googles-work-for-interpolating-two-music-sequences-621dcbfa307c)
 
 #### 2017
 
@@ -271,7 +282,8 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/BachbBot-Microsoft.jpg)
    Liang, F. T., Gotham, M., Johnson, M., & Shotton, J. (2017, October). 
    Automatic Stylistic Composition of Bach Chorales with Deep LSTM. In ISMIR (pp. 449-456).
-   [Paper](https://www.microsoft.com/en-us/research/publication/automatic-stylistic-composition-of-bach-chorales-with-deep-lstm/) [Liang Master Thesis 2016](https://www.mlmi.eng.cam.ac.uk/files/feynman_liang_8224771_assignsubmission_file_liangfeynmanthesis.pdf)
+   [Paper](https://www.microsoft.com/en-us/research/publication/automatic-stylistic-composition-of-bach-chorales-with-deep-lstm/) •
+   [Liang Master Thesis 2016](https://www.mlmi.eng.cam.ac.uk/files/feynman_liang_8224771_assignsubmission_file_liangfeynmanthesis.pdf)
 
 4. MuseGAN
    - ![image](images/MuseGAN.jpg)
@@ -279,13 +291,13 @@ The resources are organized in a reverse chronological order, starting from the 
    ![image](images/MuseGAN-3.jpg)
    Dong, H. W., Hsiao, W. Y., Yang, L. C., & Yang, Y. H. (2018, April). 
    Musegan: Multi-track sequential generative adversarial networks for symbolic music generation and accompaniment. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 32, No. 1).
-   [Web](https://salu133445.github.io/musegan/) [Paper](https://arxiv.org/pdf/1709.06298.pdf) [GitHub](https://github.com/salu133445/musegan)
+   [Web](https://salu133445.github.io/musegan/) • [Paper](https://arxiv.org/pdf/1709.06298.pdf) • [GitHub](https://github.com/salu133445/musegan)
 
 5. Composing Music with LSTM
    - ![image](images/Composing-Music-with-LSTM.jpg)
    Johnson, D. D. (2017, April). Generating polyphonic music using tied parallel networks. 
    In International conference on evolutionary and biologically inspired music and art (pp. 128-143). Springer, Cham.
-   [Paper](https://link.springer.com/chapter/10.1007/978-3-319-55750-2_9) [Web](https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/) [GitHub](https://github.com/danieldjohnson/biaxial-rnn-music-composition) [Blog](https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/)
+   [Paper](https://link.springer.com/chapter/10.1007/978-3-319-55750-2_9) • [Web](https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/) [GitHub](https://github.com/danieldjohnson/biaxial-rnn-music-composition) [Blog](https://www.danieldjohnson.com/2015/08/03/composing-music-with-recurrent-neural-networks/)
 
 6. ORGAN
    - ![image](images/ORGAN.jpg)
@@ -307,7 +319,7 @@ The resources are organized in a reverse chronological order, starting from the 
    Hadjeres, G., Pachet, F., & Nielsen, F. (2017, July). Deepbach: a steerable model for bach chorales generation. 
    In International Conference on Machine Learning (pp. 1362-1371). PMLR.
    [Web](http://www.flow-machines.com/history/projects/deepbach-polyphonic-music-generation-bach-chorales/) 
-   [Paper](https://arxiv.org/pdf/1612.01010.pdf) [Code](https://github.com/Ghadjeres/DeepBach)
+   [Paper](https://arxiv.org/pdf/1612.01010.pdf) • [Code](https://github.com/Ghadjeres/DeepBach)
 
 2. Fine-Tuning with RL
    - ![image](images/Fine-Tuning-with-RL.jpg)
@@ -336,8 +348,7 @@ The resources are organized in a reverse chronological order, starting from the 
 #### 1990s
 
 1. Neural Network Music Composition
-   - ![image](images/Neural-Network-Music-Composition.jpg)
-   Mozer, M. C. (1994). Neural network music composition by prediction: Exploring the benefits of psychoacoustic constraints and multi-scale processing. Connection Science, 6(2-3), 247-280.
+   - Mozer, M. C. (1994). Neural network music composition by prediction: Exploring the benefits of psychoacoustic constraints and multi-scale processing. Connection Science, 6(2-3), 247-280.
    [Paper](https://www.tandfonline.com/doi/abs/10.1080/09540099408915726)
 
 ---
@@ -348,38 +359,98 @@ The resources are organized in a reverse chronological order, starting from the 
 
 ### Audio Generation
 
+#### 2024
+
+1 Amphion
+   - ![Image](images/Amphion.jpg)
+   ![Image](images/Amphion-2.jpg)
+   Zhang, X., Xue, L., Gu, Y., Wang, Y., Li, J., He, H., ... (2023, December 15). 
+   Amphion: An Open-Source Audio, Music and Speech Generation Toolkit. arXiv.org.
+   [Paper](https://arxiv.org/search/?query=music+generation&searchtype=all&abstracts=show&order=-announced_date_first&size=50&start=400) •
+   [GitHub](https://github.com/open-mmlab/Amphion)
+
+1. Mustango
+   - [!image](images/Mustango.jpg)
+   Melechovsky, J., Guo, Z., Ghosal, D., Majumder, N., Herremans, D., & Poria, S. (2023, November 14). 
+   Mustango: Toward Controllable Text-to-Music Generation. arXiv.org.
+   [Paper](https://arxiv.org/abs/2311.08355) • [GitHub](https://github.com/AMAAI-Lab/mustango) • [Demo & Dataset](https://huggingface.co/spaces/declare-lab/mustango)
+
+
 #### 2023
 
-1. VALL-E-X
+1. Music ControlNet
+   - ![image](images/Music-ControlNet.jpg)
+   Wu, S., Donahue, C., Watanabe, S., & Bryan, N. J. (2023, November 13).
+   Music ControlNet: Multiple Time-varying Controls for Music Generation. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2311.07069) • [Sample](https://musiccontrolnet.github.io/web/) • [Video](https://www.youtube.com/watch?v=QVr-S-DyccU)
+
+1. JEN-1 Composer
+   - ![image](images/JEN-1-Composer.jpg)
+   Yao, Y., Li, P., Chen, B., & Wang, A. (2023, October 29). JEN-1 Composer: 
+   A Unified Framework for High-Fidelity Multi-Track Music Generation. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2310.19180)
+
+1. Music Understanding LLaMA
+   - ![image](images/Music-Understanding-LLaMA.jpg)
+   - ![image](images/Music-Understanding-LLaMA-2.jpg)
+   Liu, S., Hussain, A. S., Sun, C., & Shan, Y. (2023, August 22). Music Understanding LLaMA: Advancing Text-to-Music Generation with Question Answering and Captioning. arXiv.org.
+   [Paper](https://arxiv.org/abs/2308.11276)
+
+1. AudioLDM2
+   Liu, H., Yuan, Y., Liu, X., Mei, X., Kong, Q., Tian, Q., Wang, Y., Wang, W., Wang, Y., & Plumbley, M. D. (2023, August 10).
+   AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining. arXiv.org.
+   [Paper](https://arxiv.org/abs/2308.05734) • [Samples](https://audioldm.github.io/audioldm2/) • [GitHub](https://github.com/haoheliu/audioldm2)
+
+1. JEN-1
+   - ![image](images/JEN-1.jpg)
+   ![image](images/JEN-1-2.jpg)
+   Li, P., Chen, B., Yao, Y., Wang, Y., Wang, A., & Wang, A. (2023, August 9). 
+   JEN-1: Text-Guided Universal Music Generation with Omnidirectional Diffusion Models. arXiv.org.
+   [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
+
+1. MusiCLDM
+   - ![image](images/MusicLDM.jpg)
+   - ![image](images/MusicLDM-2.jpg)
+   Chen, K., Wu, Y., Liu, H., Nezhurina, M., Berg-Kirkpatrick, T., & Dubnov, S. (2023, August 3). 
+   MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup Strategies. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2308.01546)
+
+1. High-Fidelity Multi-Band Diffusion
+   - ![image](images/High-Fidelity-Multi-Band-Diffusion.jpg)
+   Roman, R. S., Adi, Y., Deleforge, A., Serizel, R., Synnaeve, G., & Défossez, A. (2023, August 2). 
+   From Discrete Tokens to High-Fidelity Audio Using Multi-Band Diffusion. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2308.02560)
+
+2. VALL-E-X
    - ![image](images/VALL-E-X.jpg)
    Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023). 
    Speak Foreign Languages with Your Own Voice: Cross-Lingual Neural Codec Language Modeling. arXiv preprint arXiv:2303.03926.
    [Paper](https://arxiv.org/abs/2303.03926)
 
-2. ERNIE-Music
+3. ERNIE-Music
    - ![image](images/ERNIE-Music.jpg)
    Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023). 
    ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
    [Paper](https://arxiv.org/abs/2302.04456)
 
-3. Multi-Source Diffusion Models
+4. Multi-Source Diffusion Models
    - ![image](images/Multi-Source-Diffusion-Models.jpg)
    Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
    Multi-Source Diffusion Models for Simultaneous Music Generation and Separation. arXiv preprint arXiv:2302.02257.
-   [Paper](https://arxiv.org/abs/2302.02257) [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
+   [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
 
-4. SingSong
+5. SingSong
    - ![image](images/SingSong.jpg)
    Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023). SingSong: Generating musical accompaniments from singing. arXiv preprint arXiv:2301.12662.
-   [Paper](https://arxiv.org/abs/2301.12662) [Samples](https://storage.googleapis.com/sing-song/index.html)
+   [Paper](https://arxiv.org/abs/2301.12662) • [Samples](https://storage.googleapis.com/sing-song/index.html)
 
-5. AudioLDM
+6. AudioLDM
    - ![image](images/AudioLDM.jpg)
    Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023). 
    AudioLDM: Text-to-Audio Generation with Latent Diffusion Models. arXiv preprint arXiv:2301.12503.
-   [Paper](https://arxiv.org/abs/2301.12503) [Samples](https://audioldm.github.io/) [GitHub] (https://github.com/haoheliu/AudioLDM)
+   [Paper](https://arxiv.org/abs/2301.12503) • [Samples](https://audioldm.github.io/) [GitHub] (https://github.com/haoheliu/AudioLDM)
 
-6. Mousai
+7. Mousai
    - ![image](images/Mousai.jpg)
    ![image](images/Mousai-2.jpg)
    ![image](images/Mousai-3.jpg)
@@ -388,28 +459,28 @@ The resources are organized in a reverse chronological order, starting from the 
    arXiv preprint arXiv:2301.11757.
    [Paper](https://arxiv.org/abs/2301.11757)
 
-7. Make-An-Audio
+8. Make-An-Audio
    - ![image](images/Make-An-Audio.jpg)
    Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023). 
    Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models. arXiv preprint arXiv:2301.12661.
-   [Paper](https://arxiv.org/abs/2301.12661) [Samples](https://text-to-audio.github.io/)
+   [Paper](https://arxiv.org/abs/2301.12661) • [Samples](https://text-to-audio.github.io/)
 
-8. Noise2Music
+9. Noise2Music
    - ![image](images/Noise2Music.jpg)
    Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023). 
    Noise2Music: Text-conditioned Music Generation with Diffusion Models. arXiv preprint arXiv:2302.03917.
-   [Paper](https://arxiv.org/abs/2302.03917) [Samples](https://google-research.github.io/noise2music/)
+   [Paper](https://arxiv.org/abs/2302.03917) • [Samples](https://google-research.github.io/noise2music/)
 
-9. Msanii
+10. Msanii
    - ![image](images/Msanii.jpg)
    Maina, K. (2023). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
    [Paper](https://arxiv.org/abs/2301.06468)
 
-10. MusicLM
+11. MusicLM
    - ![image](images/MusicLM.jpg)
    Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023). 
    Musiclm: Generating music from text. arXiv preprint arXiv:2301.11325.
-   [Paper](https://arxiv.org/abs/2301.11325) [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
+   [Paper](https://arxiv.org/abs/2301.11325) • [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
    [Dataset](https://www.kaggle.com/datasets/googleai/musiccaps)
 
 #### 2022
@@ -424,7 +495,7 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/AudioLM.jpg)
    Borsos, Z., Marinier, R., Vincent, D., Kharitonov, E., Pietquin, O., Sharifi, M., ... & Zeghidour, N. (2022). 
    Audiolm: a language modeling approach to audio generation. arXiv preprint arXiv:2209.03143.
-   [Paper](https://arxiv.org/abs/2209.03143) [Samples](https://google-research.github.io/seanet/audiolm/examples/)
+   [Paper](https://arxiv.org/abs/2209.03143) • [Samples](https://google-research.github.io/seanet/audiolm/examples/)
 
 #### 2021
 
@@ -432,18 +503,70 @@ The resources are organized in a reverse chronological order, starting from the 
    - ![image](images/RAVE.jpg)
    Caillon, A., & Esling, P. (2021). RAVE: A variational autoencoder for fast and high-quality neural audio synthesis. 
    arXiv preprint arXiv:2111.05011.
-   [Paper](https://arxiv.org/abs/2111.05011) [GitHub](https://github.com/acids-ircam/RAVE)
+   [Paper](https://arxiv.org/abs/2111.05011) • [GitHub](https://github.com/acids-ircam/RAVE)
 
 #### 2020
 
 1. Jukebox - OpenAI
    - ![image](images/Jukebox-OpenAI.jpg)
-   [Web](https://openai.com/blog/jukebox/) [Paper](https://arxiv.org/abs/2005.00341) [GitHub](https://github.com/openai/jukebox/)
+   [Web](https://openai.com/blog/jukebox/) • [Paper](https://arxiv.org/abs/2005.00341) • [GitHub](https://github.com/openai/jukebox/)
 
 #### 2017
 
 1. MuseNet - OpenAI
    - [Web](https://openai.com/blog/musenet/)
+
+---
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
+
+### Textual Contexts / Language Models Integration
+
+#### 2024
+
+1. SongCompoer
+   - ![image](images/SongComposer.jpg)
+   Ding, S., Liu, Z., Dong, X., Zhang, P., Qian, R., He, C., Lin, D., & Wang, J. (2024, February 27). 
+   SongComposer: A Large Language Model for Lyric and Melody Composition in Song Generation. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2402.17645)
+
+1. MusicAgent - Microsoft
+   - ![image](images/MusicAgent-Microsoft.jpg)
+   - ![image](images/MusicAgent-Microsoft-2.jpg)
+   - ![image](images/MusicAgent-Microsoft-3.jpg)
+   - ![image](images/MusicAgent-Microsoft-4.jpg)
+   Yu, D., Song, K., Lu, P., He, T., Tan, X., Ye, W., Zhang, S., & Bian, J. (2023, October 18). 
+   MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2310.11954)
+
+1. MusiLingo
+   - ![image](images/MusiLingo.jpg)
+   Deng, Z., Ma, Y., Liu, Y., Guo, R., Zhang, G., Chen, W., Huang, W., & Benetos, E. (2023, September 15). 
+   MusiLingo: Bridging Music and Text with Pre-trained Language Models for Music Captioning and Query Response. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2309.08730) • [GitHub](https://github.com/zihaod/MusiLingo) • [Dataset](https://huggingface.co/datasets/m-a-p/Music-Instruct/tree/main) 
+
+---
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
+
+### Evaluation Methodologies
+
+#### 2023
+
+1. Metrics
+   - Gui, A., Gamper, H., Braun, S., & Emmanouilidou, D. (2023, November 2). 
+   Adapting Frechet Audio Distance for Generative Music Evaluation. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2311.01616)
+
+2. Surveys
+   - ![images](images/Comprehensive-Survey-for-Evaluation-Methdologies.jpg)
+   Xiong, Z., Wang, W., Yu, J., Lin, Y., & Wang, Z. (2023, August 26). 
+   A Comprehensive Survey for Evaluation Methodologies of AI-Generated Music. arXiv.org. 
+   [Paper](https://arxiv.org/abs/2308.13736)
 
 ---
 
