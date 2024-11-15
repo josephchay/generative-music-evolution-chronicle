@@ -42,6 +42,8 @@ The resources are organized in a chronological order.
 
 ## Resources
 
+---
+
 ### Algorithmic Composition
 
 #### 1959
@@ -82,7 +84,11 @@ The resources are organized in a chronological order.
    - McLean, A., & Dean, R. T. (Eds.). (2018). The Oxford handbook of algorithmic music. Oxford University Press.
    [Book Digital Copy](https://api.pageplace.de/preview/DT0400.9780190227005_A35478151/preview-9780190227005_A35478151.pdf)
 
+---
+
 [🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
 
 ### Deep Learning Models for Symbolic Music Generation
 
@@ -328,7 +334,11 @@ The resources are organized in a chronological order.
    von Rütte, D., Biggio, L., Kilcher, Y., & Hoffman, T. (2022). FIGARO: Generating Symbolic Music with Fine-Grained Artistic Control. 
    Accepted ICLR 2023. [Paper](https://arxiv.org/pdf/2201.10936v3)
 
+---
+
 [🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
 
 ### Audio Generation
 
@@ -428,6 +438,8 @@ The resources are organized in a chronological order.
    Musiclm: Generating music from text. arXiv preprint arXiv:2301.11325.
    [Paper](https://arxiv.org/abs/2301.11325) [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
    [Dataset](https://www.kaggle.com/datasets/googleai/musiccaps)
+
+---
 
 [🡹 Back to Table of Contents 🡹](#table-of-contents)
 
