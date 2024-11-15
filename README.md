@@ -19,9 +19,9 @@ The resources are organized in a chronological order.
 #### 1992
 
 1. HARMONET 
-  - Hild, H., Feulner, J., & Menzel, W. (1992). HARMONET: A neural net for harmonizing chorales in the style of JS Bach. 
-    In Advances in neural information processing systems (pp. 267-274).
-    [Paper](https://proceedings.neurips.cc/paper/1991/file/a7aeed74714116f3b292a982238f83d2-Paper.pdf)
+   - Hild, H., Feulner, J., & Menzel, W. (1992). HARMONET: A neural net for harmonizing chorales in the style of JS Bach. 
+   In Advances in neural information processing systems (pp. 267-274).
+   [Paper](https://proceedings.neurips.cc/paper/1991/file/a7aeed74714116f3b292a982238f83d2-Paper.pdf)
 
 2. Books
     - Westergaard, P. (1959). Experimental Music. Composition with an Electronic Computer. 
@@ -36,7 +36,6 @@ The resources are organized in a chronological order.
     [Digital Copy](https://link.springer.com/book/10.1007/978-3-319-21945-5)
     - McLean, A., & Dean, R. T. (Eds.). (2018). The Oxford handbook of algorithmic music. Oxford University Press.
     [Digital Copy](https://api.pageplace.de/preview/DT0400.9780190227005_A35478151/preview-9780190227005_A35478151.pdf)
-
 
 ## Attributions
 
