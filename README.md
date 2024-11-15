@@ -659,6 +659,10 @@ The resources are organized in a reverse chronological order, starting from the 
 
 ---
 
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
+
 ### Textual Contexts / Language Models Integration
 
 #### 2024
