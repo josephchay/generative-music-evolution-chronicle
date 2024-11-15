@@ -47,6 +47,8 @@ The resources are organized in a reverse chronological order, starting from the 
     - [2024](#2024-3)
   - [Evaluation Methodologies](#evaluation-methodologies)
     - [2023](#2023-2)
+  - [General Reviews and Surveys](#general-reviews-and-surveys)
+    - [2024](#2024-4)
 
 ## Resources
 
@@ -725,6 +727,21 @@ The resources are organized in a reverse chronological order, starting from the 
 ---
 
 [🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
+
+### General Reviews and Surveys
+
+#### 2024
+
+1. Applications and Advances of Artificial Intelligence in Music Generation: A Review
+    Chen, Y., Huang, L., & Gou, T. (2024b, September 3). 
+    Applications and Advances of Artificial Intelligence in Music Generation:A Review. arXiv.org. 
+    [Paper](https://www.arxiv.org/abs/2409.03715)
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+---
 
 ## Attributions
 
