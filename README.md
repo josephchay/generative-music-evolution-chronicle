@@ -103,9 +103,31 @@ This repository is licensed under the [MIT License](./LICENSE).
       Lei, S., Zhou, Y., Tang, B., Lam, M. W. Y., ... (2024, October 30). 
       SongCreator: Lyrics-based Universal Song Generation. arXiv.org.
      
-      [Paper](https://arxiv.org/abs/2409.06029) • [Samples](https://thuhcsi.github.io/SongCreator/)
+      [Paper](https://arxiv.org/abs/2409.06029) • [Samples](https://thuhcsi.github.io/SongCreator/) • [HuggingFace](https://huggingface.co/papers/2409.06029)
 
-2. FluxMusic
+2. Presto!
+    - <img src="images/Presto.jpg" width="60%" alt="Image for Presto!">
+      <img src="images/Presto-2.jpg" width="60%" alt="Image for Presto!">
+    
+      Novack, Z., Zhu, G., Casebeer, J., McAuley, J., Berg-Kirkpatrick, T., & Bryan, N. J. (2024, October 7). 
+      Presto! Distilling Steps and Layers for Accelerating Music Generation. arXiv.org. 
+      
+      [Paper](https://arxiv.org/abs/2410.05167) • [Samples](https://presto-music.github.io/web/) • [Video](https://www.youtube.com/watch?v=NE_x-5I19CY)
+
+3. SeedMusic
+    - <img src="images/SeedMusic.jpg" width="60%" alt="Image for SeedMusic">
+      <img src="images/SeedMusic-2.jpg" width="60%" alt="Image for SeedMusic">
+      <img src="images/SeedMusic-3.jpg" width="60%" alt="Image for SeedMusic">
+      <img src="images/SeedMusic-4.jpg" width="60%" alt="Image for SeedMusic">
+      <img src="images/SeedMusic-5.jpg" width="60%" alt="Image for SeedMusic">
+      <img src="images/SeedMusic-6.jpg" width="60%" alt="Image for SeedMusic">
+    
+      Bai, Y., Chen, H., Chen, J., Chen, Z., Deng, Y., ... (2024, September 13). 
+      Seed-Music: A Unified Framework for High Quality and Controlled Music Generation. arXiv.org. 
+
+      [Paper](https://arxiv.org/abs/2409.09214) • [Samples](https://team.doubao.com/en/special/seed-music)
+
+4. FluxMusic
    - <img src="images/FluxMusic.jpg" width="60%" alt="Image for SongComposer">
 
      Fei, Z., Fan, M., Yu, C., & Huang, J. (2024, September 1). 
@@ -113,7 +135,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      
      [Paper](https://arxiv.org/abs/2409.00587) • [GitHub](https://github.com/feizc/FluxMusic)
 
-3. Long-Form Generation with Latent Diffusion
+5. Long-Form Generation with Latent Diffusion
     - <img src="images/Long-Form-Generation-with-Latent-Diffusion.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
       <img src="images/Long-Form-Generation-with-Latent-Diffusion-2.jpg" width="60%" alt="Image for Long-Form Generation with Latent Diffusion">
     
@@ -123,7 +145,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       [Paper](https://arxiv.org/abs/2404.10301) • [GitHub](https://github.com/Stability-AI/stable-audio-tools/) •
       [Samples](https://stability-ai.github.io/stable-audio-2-demo/) • [Dataset](https://www.kaggle.com/datasets/yamaerenay/spotify-tracks-dataset-19222021)
 
-4. Tango 2
+6. Tango 2
     - <img src="images/Tango-2.jpg" width="60%" alt="Image for Tango 2">
       <img src="images/Tango-2-2.jpg" width="60%" alt="Image for Tango 2">
    
@@ -132,7 +154,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2404.09956)
 
-5. Multi-Source Diffusion Models
+7. Multi-Source Diffusion Models
    - <img src="images/Multi-Source-Diffusion-Models.jpg" width="60%" alt="Image for Multi-Source Diffusion Models">
      
      Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
@@ -140,7 +162,7 @@ This repository is licensed under the [MIT License](./LICENSE).
       
      [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
 
-6. MusicHiFi
+8. MusicHiFi
    - Zhu, G., Caceres, J., Duan, Z., & Bryan, N. J. (2024, March 15). 
      MusicHiFi: Fast High-Fidelity Stereo Vocoding. arXiv.org. 
      
