@@ -49,7 +49,7 @@
       - [2024](#2024-3)
     - [Evaluation Methodologies](#evaluation-methodologies)
       - [2023](#2023-2)
-    - [General Reviews and Surveys](#general-reviews-and-surveys)
+    - [Reviews and Surveys](#reviews-and-surveys)
       - [2024](#2024-4)
       - [2021](#2021-2)
     - [Model Architectures](#model-architectures)
@@ -81,14 +81,14 @@ This repository is licensed under the [MIT License](./LICENSE).
 
 #### Key Milestones and Periods (Table)
 
-| Key Innovation Milestones                                        | Period      |
-|------------------------------------------------------------------|-------------|
-| Breakthroughs in Diffusion Models and Multi-modal Generation     | 2020s       |
-| Rise of Deep Learning and Generative Adversarial Networks (GANs) | 2010s       |
-| Early Applications of Deep Learning                              | 2000s       |
-| Development and Application of Symbolic Music Generation         | 1990s       |
-| Establishing Foundational Technologies                           | 1970-1980s  |
-| Early Exploration                                                | 1950-1960s  |
+| Key Innovation Milestones                                        | Periods    |
+|------------------------------------------------------------------|------------|
+| Breakthroughs in Diffusion Models and Multi-modal Generation     | 2020s      |
+| Rise of Deep Learning and Generative Adversarial Networks (GANs) | 2010s      |
+| Early Applications of Deep Learning                              | 2000s      |
+| Development and Application of Symbolic Music Generation         | 1990s      |
+| Establishing Foundational Technologies                           | 1970-1980s |
+| Early Exploration                                                | 1950-1960s |
 
 ---
 
@@ -123,7 +123,15 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2404.09956)
 
-4. MusicHiFi
+4. Multi-Source Diffusion Models
+   - <img src="images/Multi-Source-Diffusion-Models.jpg" width="60%" alt="Image for Multi-Source Diffusion Models">
+     
+     Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
+     Multi-Source Diffusion Models for Simultaneous Music Generation and Separation. arXiv preprint arXiv:2302.02257.
+      
+     [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
+
+5. MusicHiFi
    - Zhu, G., Caceres, J., Duan, Z., & Bryan, N. J. (2024, March 15). 
      MusicHiFi: Fast High-Fidelity Stereo Vocoding. arXiv.org. 
      
@@ -168,7 +176,35 @@ This repository is licensed under the [MIT License](./LICENSE).
       
       [Paper](https://arxiv.org/abs/2310.19180)
 
-5. Music Understanding LLaMA
+5. Mousai
+   - <img src="images/Mousai.jpg" width="60%" alt="Image for Mousai">
+     <img src="images/Mousai-2.jpg" width="60%" alt="Image for Mousai">
+     <img src="images/Mousai-3.jpg" width="60%" alt="Image for Mousai">
+     <img src="images/Mousai-4.jpg" width="60%" alt="Image for Mousai">
+   
+     Schneider, F., Jin, Z., & Schölkopf, B. (2023, October 23). Mo\^ usai: Text-to-Music Generation with Long-Context Latent Diffusion. 
+     arXiv preprint arXiv:2301.11757.
+      
+     [Paper](https://arxiv.org/abs/2301.11757)
+
+6. ERNIE-Music
+   - <img src="images/ERNIE-Music.jpg" width="60%" alt="Image for ERNIE-Music">
+     
+     Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023, September 21). 
+     ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
+      
+     [Paper](https://arxiv.org/abs/2302.04456)
+
+7. AudioLDM
+   - <img src="images/AudioLDM.jpg" width="60%" alt="Image for AudioLDM">
+
+      Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023, September 9). 
+      AudioLDM: Text-to-Audio Generation with Latent Diffusion Models. arXiv preprint arXiv:2301.12503.
+       
+      [Paper](https://arxiv.org/abs/2301.12503) • [Samples](https://audioldm.github.io/) • 
+      [GitHub](https://github.com/haoheliu/AudioLDM)
+
+8. Music Understanding LLaMA
 
    - <img src="images/Music-Understanding-LLaMA.jpg" width="60%" alt="Image for Music Understanding LLaMA">
      <img src="images/Music-Understanding-LLaMA-2.jpg" width="60%" alt="Image for Music Understanding LLaMA 2">
@@ -178,122 +214,86 @@ This repository is licensed under the [MIT License](./LICENSE).
      
      [Paper](https://arxiv.org/abs/2308.11276)
 
-6. AudioLDM2
+9. AudioLDM2
    Liu, H., Yuan, Y., Liu, X., Mei, X., Kong, Q., Tian, Q., Wang, Y., Wang, W., Wang, Y., & Plumbley, M. D. (2023, August 10).
    AudioLDM 2: Learning Holistic Audio Generation with Self-supervised Pretraining. arXiv.org.
    
    [Paper](https://arxiv.org/abs/2308.05734) • 
    [Samples](https://audioldm.github.io/audioldm2/) • [GitHub](https://github.com/haoheliu/audioldm2)
 
-7. JEN-1
-   - <img src="images/JEN-1.jpg" width="60%" alt="Image for JEN-1">
-      <img src="images/JEN-1-2.jpg" width="60%" alt="Image for JEN-1 2">
+10. JEN-1
+    - <img src="images/JEN-1.jpg" width="60%" alt="Image for JEN-1">
+       <img src="images/JEN-1-2.jpg" width="60%" alt="Image for JEN-1 2">
      
-      Li, P., Chen, B., Yao, Y., Wang, Y., Wang, A., & Wang, A. (2023, August 9). 
-      JEN-1: Text-Guided Universal Music Generation with Omnidirectional Diffusion Models. arXiv.org.
+       Li, P., Chen, B., Yao, Y., Wang, Y., Wang, A., & Wang, A. (2023, August 9). 
+       JEN-1: Text-Guided Universal Music Generation with Omnidirectional Diffusion Models. arXiv.org.
       
-      [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
+       [Paper](https://arxiv.org/abs/2308.04729) • [Samples](https://www.jenmusic.ai/research)
 
-8. MusiCLDM
-   - <img src="images/MusicLDM.jpg" width="60%" alt="Image for MusiCLDM">
-     <img src="images/MusicLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
+11. MusiCLDM
+    - <img src="images/MusicLDM.jpg" width="60%" alt="Image for MusiCLDM">
+      <img src="images/MusicLDM-2.jpg" width="60%" alt="Image for MusiCLDM 2">
       
-     Chen, K., Wu, Y., Liu, H., Nezhurina, M., Berg-Kirkpatrick, T., & Dubnov, S. (2023, August 3). 
-     MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup Strategies. arXiv.org. 
+      Chen, K., Wu, Y., Liu, H., Nezhurina, M., Berg-Kirkpatrick, T., & Dubnov, S. (2023, August 3). 
+      MusicLDM: Enhancing Novelty in Text-to-Music Generation Using Beat-Synchronous Mixup Strategies. arXiv.org. 
       
-     [Paper](https://arxiv.org/abs/2308.01546)
+      [Paper](https://arxiv.org/abs/2308.01546)
 
-9. High-Fidelity Multi-Band Diffusion
-   - <img src="images/High-Fidelity-Multi-Band-Diffusion.jpg" width="60%" alt="Image for High-Fidelity Multi-Band Diffusion">
+12. High-Fidelity Multi-Band Diffusion
+    - <img src="images/High-Fidelity-Multi-Band-Diffusion.jpg" width="60%" alt="Image for High-Fidelity Multi-Band Diffusion">
      
-     Roman, R. S., Adi, Y., Deleforge, A., Serizel, R., Synnaeve, G., & Défossez, A. (2023, August 2). 
-     From Discrete Tokens to High-Fidelity Audio Using Multi-Band Diffusion. arXiv.org. 
+      Roman, R. S., Adi, Y., Deleforge, A., Serizel, R., Synnaeve, G., & Défossez, A. (2023, August 2). 
+      From Discrete Tokens to High-Fidelity Audio Using Multi-Band Diffusion. arXiv.org. 
      
-     [Paper](https://arxiv.org/abs/2308.02560)
+      [Paper](https://arxiv.org/abs/2308.02560)
 
-10. VALL-E-X
+13. VALL-E-X
     - <img src="images/VALL-E-X.jpg" width="60%" alt="Image for VALL-E-X">
      
-      Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023). 
+      Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023, March 7). 
       Speak Foreign Languages with Your Own Voice: Cross-Lingual Neural Codec Language Modeling. arXiv preprint arXiv:2303.03926.
       
       [Paper](https://arxiv.org/abs/2303.03926)
 
-11. ERNIE-Music
-    - <img src="images/ERNIE-Music.jpg" width="60%" alt="Image for ERNIE-Music">
-     
-      Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023). 
-      ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
-      
-      [Paper](https://arxiv.org/abs/2302.04456)
-
-12. Multi-Source Diffusion Models
-    - <img src="images/Multi-Source-Diffusion-Models.jpg" width="60%" alt="Image for Multi-Source Diffusion Models">
-     
-      Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
-      Multi-Source Diffusion Models for Simultaneous Music Generation and Separation. arXiv preprint arXiv:2302.02257.
-      
-      [Paper](https://arxiv.org/abs/2302.02257) • [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
-
-13. SingSong
-    - <img src="images/SingSong.jpg" width="60%" alt="Image for SingSong">
-
-       Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023). 
-       SingSong: Generating musical accompaniments from singing. arXiv preprint arXiv:2301.12662.
-       
-       [Paper](https://arxiv.org/abs/2301.12662) • [Samples](https://storage.googleapis.com/sing-song/index.html)
-
-14. AudioLDM
-    - <img src="images/AudioLDM.jpg" width="60%" alt="Image for AudioLDM">
-
-       Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023). 
-       AudioLDM: Text-to-Audio Generation with Latent Diffusion Models. arXiv preprint arXiv:2301.12503.
-       
-       [Paper](https://arxiv.org/abs/2301.12503) • [Samples](https://audioldm.github.io/) • 
-       [GitHub](https://github.com/haoheliu/AudioLDM)
-
-15. Mousai
-    - <img src="images/Mousai.jpg" width="60%" alt="Image for Mousai">
-      <img src="images/Mousai-2.jpg" width="60%" alt="Image for Mousai">
-      <img src="images/Mousai-3.jpg" width="60%" alt="Image for Mousai">
-      <img src="images/Mousai-4.jpg" width="60%" alt="Image for Mousai">
-   
-      Schneider, F., Jin, Z., & Schölkopf, B. (2023). Mo\^ usai: Text-to-Music Generation with Long-Context Latent Diffusion. 
-      arXiv preprint arXiv:2301.11757.
-      
-      [Paper](https://arxiv.org/abs/2301.11757)
-
-16. Make-An-Audio
-    - <img src="images/Make-An-Audio.jpg" width="60%" alt="Image for Make-An-Audio">
-     
-      Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023). 
-      Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models. arXiv preprint arXiv:2301.12661.
-      
-      [Paper](https://arxiv.org/abs/2301.12661) • [Samples](https://text-to-audio.github.io/)
-
-17. Noise2Music
+14. Noise2Music
     - <img src="images/Noise2Music.jpg" width="60%" alt="Image for Noise2Music">
 
-      Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023). 
+      Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023, March 6). 
       Noise2Music: Text-conditioned Music Generation with Diffusion Models. arXiv preprint arXiv:2302.03917.
       
       [Paper](https://arxiv.org/abs/2302.03917) • [Samples](https://google-research.github.io/noise2music/)
 
-18. Msanii
-    - <img src="images/Msanii.jpg" width="60%" alt="Image for Msanii">
+15. SingSong
+    - <img src="images/SingSong.jpg" width="60%" alt="Image for SingSong">
 
-      Maina, K. (2023). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
+       Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023, January 30). 
+       SingSong: Generating musical accompaniments from singing. arXiv preprint arXiv:2301.12662.
+       
+       [Paper](https://arxiv.org/abs/2301.12662) • [Samples](https://storage.googleapis.com/sing-song/index.html)
+
+16. Make-An-Audio
+    - <img src="images/Make-An-Audio.jpg" width="60%" alt="Image for Make-An-Audio">
+     
+      Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023, January 30). 
+      Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models. arXiv preprint arXiv:2301.12661.
       
-      [Paper](https://arxiv.org/abs/2301.06468)
+      [Paper](https://arxiv.org/abs/2301.12661) • [Samples](https://text-to-audio.github.io/)
 
-19. MusicLM
+17. MusicLM
     - <img src="images/MusicLM.jpg" width="60%" alt="Image for MusicLM">
      
-      Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023). 
+      Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023, January 26). 
       Musiclm: Generating music from text. arXiv preprint arXiv:2301.11325.
       
       [Paper](https://arxiv.org/abs/2301.11325) • [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
       [Dataset](https://www.kaggle.com/datasets/googleai/musiccaps)
+
+18. Msanii
+    - <img src="images/Msanii.jpg" width="60%" alt="Image for Msanii">
+
+      Maina, K. (2023, January 16). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
+      
+      [Paper](https://arxiv.org/abs/2301.06468)
 
 #### 2022
 
@@ -855,7 +855,7 @@ f
 
 ---
 
-### General Reviews and Surveys
+### Reviews and Surveys
 
 #### 2024
 
@@ -871,6 +871,22 @@ f
     - Hernandez-Olivan, C., & Beltran, J. R. (2021, August 27). Music Composition with Deep Learning: A Review. arXiv.org. 
     
       [Paper](https://arxiv.org/pdf/2108.12290)
+
+#### 2020
+
+1. Symbolic Music Representations and their Hierarchical Modeling
+    - Carvalho, N., University of Porto, Faculty of Engineering, Bernardes, G., INESC TEC, & University of Porto, Faculty of Engineering. (2020). 
+      Towards balanced tunes: A review of symbolic music representations and their hierarchical modeling. ICCC.
+      
+      [Paper](https://computationalcreativity.net/iccc20/papers/073-iccc20.pdf)
+
+#### 2008
+
+1. Algorithmic Music Composition: A Survey
+   - Ferreira, I. M., Faculty of Engineering of the University of Porto, Machado, J. T., & Institute of Engineering of Porto. (2008). 
+     ALGORITHMIC MUSIC COMPOSITION: A SURVEY. In Proceedings of the 2nd Conference on Nonlinear Science and Complexity. 
+   
+     [Paper](https://recipp.ipp.pt/bitstream/10400.22/13406/1/COM_MachadoTenreiro259_2008.pdf)
 
 ---
 
