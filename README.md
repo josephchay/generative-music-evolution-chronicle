@@ -4,6 +4,8 @@
 
 ![logo](images/logo.png)
 
+> :note: __Last updated: 15th November 2024__
+
 ---
 
 ## Table of Contents
@@ -46,6 +48,11 @@
       - [2023](#2023-2)
     - [General Reviews and Surveys](#general-reviews-and-surveys)
       - [2024](#2024-4)
+    - [Model Architectures](#model-architectures)
+      - [Table - Comparison of Various Generative Models for Music Generation](#table---comparison-of-various-generative-models-for-music-generation)
+      - [Table - Representative Music Generation Models: Key Features and Technical Details](#table---representative-music-generation-models-key-features-and-technical-details)
+    - [Datasets](#datasets)
+      - [Table - Overview of Music Datasets and Their Applications in AI Research](#table---overview-of-music-datasets-and-their-applications-in-ai-research)
   - [Acknowledgements](#acknowledgements)
   - [Contributing](#contributing)
 
@@ -703,7 +710,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      Pasini, M., & Schlüter, J. (2022). Musika! Fast Infinite Waveform Music Generation. arXiv preprint arXiv:2208.08706.
      
      [Paper](https://arxiv.org/abs/2208.08706)
-
+f
 2. AudioLM
     - <img src="images/AudioLM.jpg" width="60%" alt="Image for AudioLM">
 
@@ -838,15 +845,104 @@ This repository is licensed under the [MIT License](./LICENSE).
     
       [Paper](https://www.arxiv.org/abs/2409.03715)
 
+#### 2021
+
+1.  Music Composition with Deep Learning
+    - Hernandez-Olivan, C., & Beltran, J. R. (2021, August 27). Music Composition with Deep Learning: A Review. arXiv.org. 
+    
+      [Paper](https://arxiv.org/pdf/2108.12290)
+
 ---
 
 [🡹 Back to Table of Contents 🡹](#table-of-contents)
 
 ---
 
+## Model Architectures
+
+### Table - Comparison of Various Generative Models for Music Generation
+
+| Model Type       | Related Research                | Strengths                                                                      | Challenges                                                                                                  | Suitable Scenarios                                                                                                                   |
+|------------------|---------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Hybrid Models    | MuseNet, MusicVAE               | Comvines strengths of symbolic and audio models, controls structure and timbre | Complexity in integrating different model types, re-requires more sophisticated tuning                      | Ideal for creating music that requires both structural coherence and rich audio expressiveness, useful in advanced music composition |
+| Diffusion Models | DiffWave, WaveGrad, Noise2Music | High-quality audio generation, excels in producing high-fidelity music         | Training and generation time can be long, challenging in real-time scenarios                                | Suitable for generating high-quality audio and sound effects, particularly in media production                                       |
+| VAE              | MIDI-VAE, Jukebox               | Encourages diversity and creativity, suitable for style transfer               | Generated music can lack musical coherence and expressiveness compared to GANs or Transformers              | Best for tasks requiring high variability and creativity, such as style transfer and music exploration                               |
+| Transformer      | Music Transformer, MusicLM      | Excellent at capturing long-range dependencies and complex structures          | High computational demand, requires large amounts of data for training                                      | Best for generating music with complex structures, long sequences, and coherent compositions                                         |
+| GAN              | MuseGAN, WaveGAN                | High-quality, realistic generation, suitable for complex and diverse audio     | Training can be unstable, prone to mode collapse, limited in capturing structure and long-term dependencies | Ideal for generating complex audio content like multi-instrument music or diverse sound effects                                      |
+| LSTM             | DeepBach, BachBot               | Good at capturing temporal dependencies and sequential data                    | High computational cost, training requires large datasets, struggles with long-term dependencies            | Suitable for sequential music generation tasks, such as harmonization and melody generation                                          |
+
+### Table - Representative Music Generation Models: Key Features and Technical Details
+
+| Model Name            | Base Architecture       | Dataset Used                                            | Data Representation                        | Loss Function                        | Year |
+|-----------------------|-------------------------|---------------------------------------------------------|--------------------------------------------|--------------------------------------|------|
+| Noise2Music           | Diffusion Model         | MusicCaps, MTAT, Audioset                               | Audio Waveform                             | Diffusion Loss                       | 2023 |
+| MuseCoco              | GAN-based               | Multiple MIDI datasets including Lakh MIDI and MetaMIDI | Multi-track MIDI                           | Binary Cross-Entropy Loss            | 2023 |
+| MeLoDy                | LM-guided Diffusion     | 257k hours of non-vocal music                           | Audio Waveform                             | Cross-Entropy Loss, Diffusion Loss   | 2023 |
+| Moûsai                | Diffusion Model         | Moûsai-2023                                             | Mel-spectrogram                            | Spectral loss, GAN loss              | 2023 |
+| Music ControlNet      | Diffusion Model         | MusicCaps (1800 hours)                                  | Audio Waveform                             | Diffusion Loss                       | 2023 |
+| MusicGen              | Transformer             | Shutterstock, Pond5                                     | Audio Waveform                             | Cross-Entropy Loss, Perceptual Loss  | 2023 |
+| MusicLM               | Transformer + AudioLDM  | Free Music Archive (FMA)                                | Audio Waveform                             | Cross-Entropy Loss, Contrastive Loss | 2023 |
+| Riffusion             | Diffusion + CLIP        | Large-Scale Popular Music Dataset (Custom)              | Spectrogram Image                          | Diffusion Loss, Reconstruction Loss  | 2022 |
+| DiffWave              | Diffusion Model         | VCTK, LJSpeech                                          | Waveform                                   | L1 loss, GAN loss                    | 2020 |
+| Pop Music Transformer | Transformer-XL          | Custom Dataset (Pop piano music)                        | REMI (Rhythm-Event-Metric Information)     | Cross-Entropy Loss                   | 2020 |
+| MelGAN                | GAN-based               | VCTK, LJSpeech                                          | Audio Waveform                             | GAN Loss (Multi-Scale Discriminator) | 2019 |
+| Jukebox               | VQ-VAE + Autoregressive | 1.2 million songs (LyricWiki)                           | Audio Waveform                             | Reconstruction Loss, Perceptual Loss | 2019 |
+| WaveGAN               | GAN                     | Speech Commands, AudioSet                               | Audio Waveform                             | GAN Loss (Wasserstein Distance)      | 2019 |
+| Music Transformer     | Transformer             | Lakh MIDI Dataset (LMD)                                 | MIDI File                                  | Cross-Entropy Loss                   | 2019 |
+| MIDI-VAE              | VAE                     | MIDI files (Classic, Jazz, Pop, Bach, Mozart)           | Pitch roll, Velocity roll, Instrument roll | Cross Entropy, MSE, KL Divergence    | 2018 |
+| MuseGAN               | GAN                     | Lakh MIDI Dataset (LMD)                                 | Multi-track MIDI                           | Binary Cross-Entropy Loss            | 2018 |
+| DeepBach              | LSTM                    | Bach Chorale Dataset                                    | MIDI File                                  | Cross-Entropy Loss                   | 2017 |
+| DCGAN                 | CNN                     | Lakh MIDI Dataset (LMD)                                 | Audio Waveform                             | Binary Cross-Entropy Loss            | 2016 |
+| BachBot               | LSTM                    | Bach Chorale Dataset                                    | Symbolic Data                              | Cross-Entropy Loss                   | 2016 |
+| WaveNet               | CNN                     | VCTK Corpus, YouTube Data                               | Waveform                                   | L1 Loss                              | 2016 |
+
+## Datasets
+
+### Table - Overview of Music Datasets and Their Applications in AI Research
+
+| Dataset Name               | Year | Type               | Scale                             | Main Application Areas                |
+|----------------------------|------|--------------------|-----------------------------------|---------------------------------------|
+| Singing Voice Conversion   | 2023 | Audio              | subset of NHSS                    | Voice Conversion                      |
+| MIDI-DDSP                  | 2022 | MIDI, Audio        | varied                            | Music Generation, Synthesis           |
+| Hi-Fi Singer               | 2021 | Audio              | 11 hours                          | Singing Voice Synthesis               |
+| Groove2Groove              | 2020 | Audio              | thousands of clips                | Style Transfer                        |
+| MG-VAE                     | 2020 | MIDI               | 2000 songs                        | Style Transfer                        |
+| Slakh2100                  | 2019 | MIDI, Audio        | 2100 tracks                       | Source Separation                     |
+| LakhNES                    | 2019 | MIDI               | 775,000 multi-instrument examples | Music Generation                      |
+| GiantMIDI-Piano            | 2020 | MIDI               | 10,855 songs                      | Music Transcription, Analysis         |
+| Groove MIDI Dataset        | 2019 | MIDI, Audio        | 13.6 hours                        | Rhythm Generation                     |
+| MAESTRO                    | 2018 | MIDI, Audio        | 200 hours                         | Music Generation, Piano Transcription |
+| URMP                       | 2018 | Audio, Video, MIDI | 44 performances                   | Audio-Visual Analysis                 |
+| CH818                      | 2017 | Audio              | 818 clips                         | Emotion Recognition                   |
+| AudioSet                   | 2017 | Audio              | 2,000,000 clips                   | Audio Event Detection                 |
+| Free Music Archive (FMA)   | 2017 | Audio              | 106,574 songs                     | Music Classification                  |
+| LJSpeech                   | 2017 | Audio              | 13,100 clips                      | Speech Synthesis                      |
+| DEAM                       | 2017 | Audio              | 1802 songs                        | Emotion Recognition                   |
+| NSynth                     | 2017 | Audio              | 300,000 samples                   | Music Synthesis                       |
+| Lakh MIDI                  | 2017 | MIDI               | 176,581 files                     | Music Information Retrieval           |
+| VCTK Corpus                | 2016 | Audio              | 110 speakers                      | Speech Recognition, TTS               |
+| AMG1608                    | 2015 | Audio              | 1608 clips                        | Emotion Recognition                   |
+| MediaEval Emotion in Music | 2013 | Audio              | 1000 songs                        | Emotion Recognition                   |
+| Million Song Dataset       | 2011 | Audio              | 1,000,000 songs                   | Music Information Retrieval           |
+| Nottingham Music Dataset   | 2009 | MIDI               | 1000 tunes                        | Symbolic Music Analysis               |
+| MagnaTagATune              | 2008 | Audio              | 25,863 clips                      | Music Annotation, Emotion Recognition |
+| CAL500                     | 2007 | Audio              | 500 songs                         | Emotion Recognition                   |
+
+---
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
 ## Acknowledgements
 
 ### Reviews and Surveys
+
+#### 2024
+
+1. Applications and Advances of Artificial Intelligence in Music Generation: A Review
+    - Chen, Y., Huang, L., & Gou, T. (2024b, September 3).
+      Applications and Advances of Artificial Intelligence in Music Generation:A Review. arXiv.org. 
+    
+      [Paper](https://www.arxiv.org/abs/2409.03715)
 
 #### 2021
 
