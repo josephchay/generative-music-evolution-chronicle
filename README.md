@@ -40,6 +40,7 @@ The resources are organized in a reverse chronological order, starting from the 
     - [2020](#2020-1)
     - [2017](#2017-1)
   - [Textual Contexts & Language Model Integration](#textual-contexts--language-models-integration)
+    - [2024](#2024-2)
   - [Evaluation Methodologies](#evaluation-methodologies)
     - [2023](#2023-2)
 
