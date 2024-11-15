@@ -33,6 +33,12 @@ The resources are organized in a chronological order.
     - [2021](#2021)
     - [2022](#2022)
     - [2023](#2023)
+  - [Audio Generation](#audio-generation)
+    - [2017](#2017-1)
+    - [2020](#2020-1)
+    - [2021](#2021-1)
+    - [2022](#2022-1)
+    - [2023](#2023-1)
 
 ## Resources
 
@@ -76,6 +82,7 @@ The resources are organized in a chronological order.
    - McLean, A., & Dean, R. T. (Eds.). (2018). The Oxford handbook of algorithmic music. Oxford University Press.
    [Book Digital Copy](https://api.pageplace.de/preview/DT0400.9780190227005_A35478151/preview-9780190227005_A35478151.pdf)
 
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
 
 ### Deep Learning Models for Symbolic Music Generation
 
@@ -320,6 +327,109 @@ The resources are organized in a chronological order.
    - ![image](images/FIGARO-v3.jpg)
    von Rütte, D., Biggio, L., Kilcher, Y., & Hoffman, T. (2022). FIGARO: Generating Symbolic Music with Fine-Grained Artistic Control. 
    Accepted ICLR 2023. [Paper](https://arxiv.org/pdf/2201.10936v3)
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
+
+### Audio Generation
+
+#### 2017
+
+1. MuseNet - OpenAI
+   - [Web](https://openai.com/blog/musenet/)
+
+#### 2020
+
+1. Jukebox - OpenAI
+   - ![image](images/Jukebox-OpenAI.jpg)
+   [Web](https://openai.com/blog/jukebox/) [Paper](https://arxiv.org/abs/2005.00341) [GitHub](https://github.com/openai/jukebox/)
+
+#### 2021
+
+1. RAVE
+   - ![image](images/RAVE.jpg)
+   Caillon, A., & Esling, P. (2021). RAVE: A variational autoencoder for fast and high-quality neural audio synthesis. 
+   arXiv preprint arXiv:2111.05011.
+   [Paper](https://arxiv.org/abs/2111.05011) [GitHub](https://github.com/acids-ircam/RAVE)
+
+#### 2022
+
+1. Musika
+   - ![image](images/MUSIKA.jpg)
+   ![image](images/MUSIKA-2.jpg)
+   Pasini, M., & Schlüter, J. (2022). Musika! Fast Infinite Waveform Music Generation. arXiv preprint arXiv:2208.08706.
+   [Paper](https://arxiv.org/abs/2208.08706)
+
+2. AudioLM
+   - ![image](images/AudioLM.jpg)
+   Borsos, Z., Marinier, R., Vincent, D., Kharitonov, E., Pietquin, O., Sharifi, M., ... & Zeghidour, N. (2022). 
+   Audiolm: a language modeling approach to audio generation. arXiv preprint arXiv:2209.03143.
+   [Paper](https://arxiv.org/abs/2209.03143) [Samples](https://google-research.github.io/seanet/audiolm/examples/)
+
+#### 2023
+
+1. VALL-E-X
+   - ![image](images/VALL-E-X.jpg)
+   Zhang, Z., Zhou, L., Wang, C., Chen, S., Wu, Y., Liu, S., ... & Wei, F. (2023). 
+   Speak Foreign Languages with Your Own Voice: Cross-Lingual Neural Codec Language Modeling. arXiv preprint arXiv:2303.03926.
+   [Paper](https://arxiv.org/abs/2303.03926)
+
+2. ERNIE-Music
+   - ![image](images/ERNIE-Music.jpg)
+   Zhu, P., Pang, C., Wang, S., Chai, Y., Sun, Y., Tian, H., & Wu, H. (2023). 
+   ERNIE-Music: Text-to-Waveform Music Generation with Diffusion Models. arXiv preprint arXiv:2302.04456.
+   [Paper](https://arxiv.org/abs/2302.04456)
+
+3. Multi-Source Diffusion Models
+   - ![image](images/Multi-Source-Diffusion-Models.jpg)
+   Mariani, G., Tallini, I., Postolache, E., Mancusi, M., Cosmo, L., & Rodolà, E. (2023). 
+   Multi-Source Diffusion Models for Simultaneous Music Generation and Separation. arXiv preprint arXiv:2302.02257.
+   [Paper](https://arxiv.org/abs/2302.02257) [Samples](https://gladia-research-group.github.io/multi-source-diffusion-models/)
+
+4. SingSong
+   - ![image](images/SingSong.jpg)
+   Donahue, C., Caillon, A., Roberts, A., Manilow, E., Esling, P., Agostinelli, A., ... & Engel, J. (2023). SingSong: Generating musical accompaniments from singing. arXiv preprint arXiv:2301.12662.
+   [Paper](https://arxiv.org/abs/2301.12662) [Samples](https://storage.googleapis.com/sing-song/index.html)
+
+5. AudioLDM
+   - ![image](images/AudioLDM.jpg)
+   Liu, H., Chen, Z., Yuan, Y., Mei, X., Liu, X., Mandic, D., ... & Plumbley, M. D. (2023). 
+   AudioLDM: Text-to-Audio Generation with Latent Diffusion Models. arXiv preprint arXiv:2301.12503.
+   [Paper](https://arxiv.org/abs/2301.12503) [Samples](https://audioldm.github.io/) [GitHub] (https://github.com/haoheliu/AudioLDM)
+
+6. Mousai
+   - ![image](images/Mousai.jpg)
+   ![image](images/Mousai-2.jpg)
+   ![image](images/Mousai-3.jpg)
+   ![image](images/Mousai-4.jpg)
+   Schneider, F., Jin, Z., & Schölkopf, B. (2023). Mo\^ usai: Text-to-Music Generation with Long-Context Latent Diffusion. 
+   arXiv preprint arXiv:2301.11757.
+   [Paper](https://arxiv.org/abs/2301.11757)
+
+7. Make-An-Audio
+   - ![image](images/Make-An-Audio.jpg)
+   Huang, R., Huang, J., Yang, D., Ren, Y., Liu, L., Li, M., ... & Zhao, Z. (2023). 
+   Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models. arXiv preprint arXiv:2301.12661.
+   [Paper](https://arxiv.org/abs/2301.12661) [Samples](https://text-to-audio.github.io/)
+
+8. Noise2Music
+   - ![image](images/Noise2Music.jpg)
+   Huang, Q., Park, D. S., Wang, T., Denk, T. I., Ly, A., Chen, N., ... & Han, W. (2023). 
+   Noise2Music: Text-conditioned Music Generation with Diffusion Models. arXiv preprint arXiv:2302.03917.
+   [Paper](https://arxiv.org/abs/2302.03917) [Samples](https://google-research.github.io/noise2music/)
+
+9. Msanii
+   - ![image](images/Msanii.jpg)
+   Maina, K. (2023). Msanii: High Fidelity Music Synthesis on a Shoestring Budget. arXiv preprint arXiv:2301.06468.
+   [Paper](https://arxiv.org/abs/2301.06468)
+
+10. MusicLM
+   - ![image](images/MusicLM.jpg)
+   Agostinelli, A., Denk, T. I., Borsos, Z., Engel, J., Verzetti, M., Caillon, A., ... & Frank, C. (2023). 
+   Musiclm: Generating music from text. arXiv preprint arXiv:2301.11325.
+   [Paper](https://arxiv.org/abs/2301.11325) [Samples](https://google-research.github.io/seanet/musiclm/examples/) 
+   [Dataset](https://www.kaggle.com/datasets/googleai/musiccaps)
+
+[🡹 Back to Table of Contents 🡹](#table-of-contents)
 
 ## Attributions
 
