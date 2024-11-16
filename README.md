@@ -24,17 +24,24 @@
       - [2020](#2020-1)
       - [2017](#2017-1)
     - [Deep Learning Models for Symbolic Music Generation](#deep-learning-models-for-symbolic-music-generation)
-      - [2024](#2024)
-      - [2023](#2023)
-      - [2022](#2022)
-      - [2021](#2021)
-      - [2020](#2020)
-      - [2019](#2019)
-      - [2018](#2018)
-      - [2017](#2017)
-      - [2016](#2016)
-      - [2002](#2002)
-      - [1990s](#1990s)
+        - [Task-Oriented Taxonomy](#task-oriented-taxonomy)
+          - [Generation from Scratch](#generation-from-scratch)
+            - [Methods](#methods)
+          - [Conditional Generation](#conditional-generation)
+            - [Methods](#methods-1)
+          - [Controllable Generation](#controllable-generation)
+            - [Methods](#methods-2)
+        - [2024](#2024)
+        - [2023](#2023)
+        - [2022](#2022)
+        - [2021](#2021)
+        - [2020](#2020)
+        - [2019](#2019)
+        - [2018](#2018)
+        - [2017](#2017)
+        - [2016](#2016)
+        - [2002](#2002)
+        - [1990s](#1990s)
     - [Algorithmic Composition](#algorithmic-composition)
        - [2018](#2018)
        - [2015](#2015)
@@ -51,6 +58,7 @@
       - [2023](#2023-2)
     - [Reviews and Surveys](#reviews-and-surveys)
       - [2024](#2024-4)
+      - [2023](#2023-3)
       - [2021](#2021-2)
     - [Model Architectures](#model-architectures)
       - [Comparison of Various Generative Models for Music Generation (Table)](#comparison-of-various-generative-models-for-music-generation-table)
@@ -377,7 +385,7 @@ This repository is licensed under the [MIT License](./LICENSE).
      Pasini, M., & Schlüter, J. (2022). Musika! Fast Infinite Waveform Music Generation. arXiv preprint arXiv:2208.08706.
      
      [Paper](https://arxiv.org/abs/2208.08706)
-f
+
 2. AudioLM
     - <img src="images/AudioLM.jpg" width="60%" alt="Image for AudioLM">
 
@@ -391,7 +399,7 @@ f
 1. RAVE
     - <img src="images/RAVE.jpg" width="60%" alt="Image for RAVE">
       
-      Caillon, A., & Esling, P. (2021). RAVE: A variational autoencoder for fast and high-quality neural audio synthesis. 
+      Caillon, A., & Esling, P. (2021, December 15). RAVE: A variational autoencoder for fast and high-quality neural audio synthesis. 
       arXiv preprint arXiv:2111.05011.
       
       [Paper](https://arxiv.org/abs/2111.05011) • [GitHub](https://github.com/acids-ircam/RAVE)
@@ -416,6 +424,105 @@ f
 ---
 
 ### Deep Learning Models for Symbolic Music Generation
+
+#### Task-Oriented Taxonomy
+
+| Types                   | Categories                                                                                       | Also Covers                                                              |
+|-------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Generation from Scratch | Melody, Polyphony, Multitrack                                                                    | N/A                                                                      |
+| Conditional Generation  | Melody Generation Given Chord, Melody Harmonization, Accompaniment Arrangement, Score Inpainting | N/A                                                                      | 
+| Controllable Generation | Style, Structure, Sentiment                                                                      | Generation from Scratch, Conditional Generation                          |
+| Performance Generation  | Rendering, Composing                                                                             | Generation from Scratch, Conditional Generation, Controllable Generation |
+| Interactive Generation  | Call and Response, Accompaniment, Application                                                    | Conditional Generation, Controllable Generation                          | 
+
+##### Generation from Scratch
+
+###### Methods
+
+| Task             | Method                                                                                                                                                          | Year | Music Representation | Model Architecture  | Description                                                                      | Length of generated music |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------|----------------------|---------------------|----------------------------------------------------------------------------------|---------------------------|
+| Melody           | Melody RNN <br/>[Web](https://magenta.tensorflow.org/2016/07/15/lookback-rnn-attention-rnn/)                                                                    | 2016 | Event                | RNN                 | Lookback RNN; Attention RNN                                                      | Variable-length           |
+|                  | Anticipation-RNN<br/>[Paper](https://arxiv.org/abs/1709.06404)                                                                                                  | 2017 | Sequence             | RNN                 | User-defined positional constraints                                              | Variable-length           |
+|                  | MusicVAE<br/>[Paper](https://arxiv.org/abs/1803.05428)                                                                                                          | 2018 | Piano roll           | RNN-based VAE       | Long-term music structure; Hierarchical decoder                                  | 16 bars                   |
+|                  | [Paper](https://arxiv.org/abs/2202.06180)                                                                                                                       | 2021 | Sequence             | RNN-based EC²-VAE   | Long-term music representations; Hierarchical contextual constraints.            | 8 bars                    |
+|                  | GLSR-VAE <br/>[Paper](https://ieeexplore.ieee.org/document/8280895)                                                                                             | 2017 | Sequence             | RNN-based VAE       | Continuous attributes; Geodesic latent space regularization                      | 2 bars                    |
+|                  | [Paper](https://arxiv.org/abs/2004.05485)                                                                                                                       | 2021 | Sequence             | β-VAE and AR-VAE    | Continuous-valued attributes; Latent space disentanglement and regularization    | 1 bar                     |
+|                  | SeqGAN <br/>[Paper](https://www.researchgate.net/publication/308324937_SeqGAN_Sequence_Generative_Adversarial_Nets_with_Policy_Gradient)                        | 2017 | Sequence             | RNN-CNN-based GAN   | Reinforcement learning; Monte Carlo search                                       | 12.8s                     |
+|                  | RL Tuner <br/>[Paper](https://openreview.net/forum?id=Syyv2e-Kx)                                                                                                | 2017 | Piano roll           | RNN                 | Reinforcement learning; DQN algorithm                                            | 32 notes (16th)           |
+| Polyphony        | DeepBach <br/>[Paper](https://proceedings.mlr.press/v70/hadjeres17a.html)                                                                                       | 2016 | Sequence             | RNN                 | User-defined constraints                                                         | Variable-length           |
+|                  | [Paper](https://www.cs.hmc.edu/~ddjohnson/tied-parallel/johnson2017tiedparallel.pdf)                                                                            | 2017 | Piano roll           | RNN                 | Transposition-invariance; Tied parallel LSTM-NADE; Bi-axial LSTM                 | Variable-length           |
+|                  | [Paper](https://arxiv.org/abs/1810.03226)                                                                                                                       | 2018 | Piano roll           | CNN & RNN-based VAE | Bar-level CNN feature learning                                                   | 8, 16 or 32 bars          |
+|                  | [Paper](https://proceedings.mlr.press/v97/ziegler19a.html)                                                                                                      | 2019 | Piano roll           | RNN-based VAE       | Latent normalizing flows; Non-autoregressive generation                          | Variable-length           |
+|                  | PianoTree VAE <br/>[Paper](https://arxiv.org/abs/2008.07118)                                                                                                    | 2020 | Event                | RNN-based VAE       | Tree structured musical syntax                                                   | 8 beats                   |
+|                  | [Paper](https://www.researchgate.net/publication/348980503_Deep_Music_Information_Dynamics)                                                                     | 2022 | Piano roll           | VAE                 | Using only linear layers; bit-rate reduction                                     | 1 bar                     |
+|                  | C-RNN-GAN <br/>[Paper](https://arxiv.org/abs/1611.09904)                                                                                                        | 2016 | Event                | RNN-based GAN       | Continuous sequential data                                                       | Variable-length           |
+|                  | Music Transformer <br/>[Paper](https://arxiv.org/abs/1809.04281)                                                                                                | 2019 | Event                | Transformer         | Relative attention mechanism; Compelling long-term structure                     | Minute-long               |
+|                  | MuseNet <br/>[Web](http://openai.com/blog/musenet)                                                                                                              | 2019 | Event                | Transformer         | Same general-purpose unsupervised technology as GPT-2                            | 4-minute long             |
+|                  | [Paper](https://ieeexplore.ieee.org/document/9132664)                                                                                                           | 2020 | Event                | Transformer         | Adversarial learning; Novel computation of reward for each generated step (REGS) | Up to 1024 tokens         |
+| Multitrack Music | MuseGAN <br/>[Paper](https://arxiv.org/abs/1709.06298)                                                                                                          | 2018 | Piano roll           | CNN-based GAN       | WGAN-GP; Multi-track interdependency and temporal structure                      | 4 bars                    |
+|                  | [Paper](https://arxiv.org/abs/1804.09399)                                                                                                                       | 2018 | Piano roll           | CNN-based GAN       | Binary neurons for binary-valued piano roll                                      | 4 bars                    |
+|                  | DMB-GAN <br/>[Paper](https://www.semanticscholar.org/paper/A-GAN-Model-With-Self-attention-Mechanism-To-Music-Guan-Yu/4613a5e9218bcb9b439c500bc78622183e802893) | 2019 | Piano roll           | GAN                 | Self-attention mechanism; Duel Multi-branches GAN architecture                   | 4 bars                    |
+|                  | [Paper](https://arxiv.org/abs/1806.00195)                                                                                                                       | 2018 | Event                | RNN-based VAE       | An extension of MusicVAE; Latent space manipulations                             | 1 bar                     |
+|                  | MNGANs <br/>[Paper](https://dl.acm.org/doi/10.1145/3240508.3240604)                                                                                             | 2018 | Piano roll           | CNN-based GAN       | Optimizing musicality and novelty alternately                                    | 4 bars                    |
+|                  | LakhNES <br/>[Paper](https://arxiv.org/abs/1907.04868)                                                                                                          | 2019 | Event                | Transformer-XL      | Cross-domain pre-training                                                        | Variable-length           |
+|                  | MMM <br/>[Paper](https://arxiv.org/abs/2008.06048)                                                                                                              | 2020 | Event                | Transformer         | Concatenating time-ordered sequence of each track into a single sequence         | 4 or 8 bars               |
+|                  | MMT <br/>[Paper](https://arxiv.org/abs/2207.06983)                                                                                                              | 2023 | Event                | Transformer         | New multitrack representation; New measure for musical self-attention            | Up to 1,024 codes         |
+
+##### Conditional Generation
+
+###### Methods
+
+| Task                          | Method                                                                                                                                           | Year | Music Representation | Model Architecture | Description                                                                                                                   | Length of generated music |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------|----------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| Melody Generation Given Chord | MidiNet <br/>[Paper](https://arxiv.org/abs/1703.10847)                                                                                           | 2017 | Piano roll           | CNN-base GAN       | Generating music one bar after another; Conditioner CNN                                                                       | 8 bars                    |
+|                               | CRMCG <br/>[Paper](https://dl.acm.org/doi/10.1145/3219819.3220105)                                                                               | 2018 | Sequence             | RNN                | Encoder-decoder framework                                                                                                     | Variable-length           |
+|                               | JazzGAN <br/>[Paper](https://musicalmetacreation.org/mume2018/proceedings/Trieu.pdf)                                                             | 2018 | Piano roll or Event  | RNN-based GAN      | Improvising jazz melodies over chord progressions; Harmonic bricks for phrase segmentation                                    | Variable-length           |
+|                               | BebopNet <br/>[Paper](https://program.ismir2020.net/static/final_papers/132.pdf)                                                                 | 2020 | Sequence             | RNN                | Monophonic harmony-constrained jazz improvisations; Personalized generation                                                   | Variable-length           |
+|                               | MINGUS <br/>[Paper](https://archives.ismir.net/ismir2021/paper/000051.pdf)                                                                       | 2021 | Sequence             | Transformer        | Two parallel transformers for pitch and duration, respectively                                                                | Up to 35 tokens           |
+| Melody Harmonization          | [Paper](https://arxiv.org/abs/1712.01011)                                                                                                        | 2017 | Sequence             | RNN                | BiLSTM; A chord per bar                                                                                                       | Up to 16 bars             |
+|                               | MTHarmonizer <br/>[Paper](https://arxiv.org/abs/2001.02360)                                                                                      | 2021 | Sequence             | RNN                | Chord functions; A chord every half bar                                                                                       | 4-32 bars                 |
+|                               | [Paper](https://www.researchgate.net/publication/352170954_Melody_Harmonization_Using_Orderless_Nade_Chord_Balancing_and_Blocked_Gibbs_Sampling) | 2021 | Sequence             | RNN                | Orderless NADE; Chord balancing; Blocked Gibbs sampling                                                                       | Variable-length           |
+|                               | SurpriseNet <br/>[Paper](https://arxiv.org/abs/2108.00378)                                                                                       | 2021 | Sequence             | RNN-based VAE      | Conditional VAE; Surprise contour                                                                                             | Variable-length           |
+|                               | AutoHarmonizer <br/>[Paper](https://arxiv.org/abs/2112.11122)                                                                                    | 2021 | Sequence             | RNN                | Controllable harmonic rhythm                                                                                                  | Variable-length           |
+| Accompaniment Arrangement     | [Paper](https://arxiv.org/abs/1807.11161)                                                                                                        | 2018 | Piano roll           | GAN                | Recurrent CNN model; three new symbolic-domain harmonic features                                                              | 8 bars                    |
+|                               | MICA <br/>[Paper](https://dl.acm.org/doi/10.1145/3219819.3220105)                                                                                | 2018 | Sequence             | RNN                | Attention cell and MLP cell                                                                                                   | Variable-length           |
+|                               | PopMAG <br/>[Paper](https://arxiv.org/abs/2008.07703)                                                                                            | 2020 | Event                | Transformer        | MuMIDI representation; Extra-long context                                                                                     | Up to 32 bars             |
+| Music Inpainting              | Coconet <br/>[Paper](https://arxiv.org/abs/1903.07227)                                                                                           | 2017 | Piano roll           | CNN                | Orderless NADE; Blocked Gibbs Sampling                                                                                        | 128 notes (16th)          |
+|                               | [Paper](https://nips2018creativity.github.io/doc/infilling_piano_performances.pdf)                                                               | 2018 | Event                | Transformer        | Virtuosic piano performances; NoteTuple representation [Paper](https://nips2018creativity.github.io/doc/Transformer_NADE.pdf) | 16 or 32 notes            |
+|                               | ES-Net <br/>[Paper](https://arxiv.org/abs/2008.08927)                                                                                            | 2020 | Piano roll           | U-Net              | Edit events; Note by note control                                                                                             | 8 bars                    |
+|                               | InpaintNet <br/>[Paper](https://arxiv.org/abs/1907.01164)                                                                                        | 2019 | Sequence             | RNN-based VAE      | Traversing latent space                                                                                                       | 2-6 bars                  |
+|                               | Music SketchNet <br/>[Paper](https://arxiv.org/abs/2008.01291)                                                                                   | 2020 | Sequence             | RNN-based VAE      | SketchVAE, SketchInpainter and SketchConnector; User-specified pitch and rhythm snippets                                      | 4 bars                    |
+|                               | CLSM <br/>[Paper](https://arxiv.org/abs/2111.11703)                                                                                              | 2021 | Sequence             | Transformer & LSTM | Contextual latent space model; Positional constraints; Interpolations or variations                                           | Up to 4 bars              |
+|                               | [Paper](https://arxiv.org/abs/2108.05064)                                                                                                        | 2021 | Event                | XLNet              | A novel relative bar coding; Look-ahead onset prediction                                                                      | Up to 128 notes           |
+|                               | [Paper](https://arxiv.org/abs/2202.05528)                                                                                                        | 2022 | Event                | Transformer        | Masked pretraining and finetuning; Track level and bar level controls                                                         | Up to 16 bars             |
+
+##### Controllable Generation
+
+###### Methods
+
+| Controlled Aspect | Method                                                                                                                                         | Year | Music Representation | Model Architecture      | Description                                                                                                                                                                                                                                                         | Length of generated music |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------|------|----------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| Style             | DeepJ <br/>[Paper](https://arxiv.org/abs/1801.00887)                                                                                           | 2018 | Piano roll           | RNN                     | A specific mixture of composer styles                                                                                                                                                                                                                               | Variable-length           |
+|                   | BandNet <br/>[Paper](https://arxiv.org/abs/1812.07126)                                                                                         | 2019 | Event                | RNN                     | The style of Beatles; Templated-base method to generate structured music                                                                                                                                                                                            | 4-16 bars                 |
+|                   | MSMICA <br/>[Paper](https://dl.acm.org/doi/10.1145/3374915)                                                                                    | 2020 | Sequence             | RNN                     | Extension of MICA [Paper](https://dl.acm.org/doi/10.1145/3219819.3220105) with style control; Reinforcement learning similar to SeqGAN [Paper](https://www.researchgate.net/publication/308324937_SeqGAN_Sequence_Generative_Adversarial_Nets_with_Policy_Gradient) | Variable-length           |
+|                   | [Paper](https://arxiv.org/abs/1912.05537)                                                                                                      | 2020 | Event                | Transformer             | Obtaining a global style representation of style from a given performance                                                                                                                                                                                           | Up to 2048 tokens         |
+|                   | MIDI-VAE <br/>[Paper](https://arxiv.org/abs/1809.07600)                                                                                        | 2018 | Piano roll           | RNN-based VAE           | Unaligned style transfer; parallel VAE with a shared latent space and a style classifier                                                                                                                                                                            | 1 bar                     |
+|                   | [Paper](https://www.semanticscholar.org/paper/Transferring-the-Style-of-Homophonic-Music-Using-Lu-Su/24f2f6adc36003eee89a7e156277a5458b61177e) | 2018 | Piano roll           | LSTM & CNN              | Style transfer of accompaniment in homophonic music                                                                                                                                                                                                                 | Variable-length           |
+|                   | MuseMorphose <br/>[Paper](https://arxiv.org/abs/2105.04090)                                                                                    | 2021 | Event                | Transformer VAE         | Style transfer of long musical pieces; User specified bar-level musical attributes                                                                                                                                                                                  | Up to 32 bars             |
+|                   | [Paper](https://arxiv.org/abs/1809.07575)                                                                                                      | 2018 | Event                | GAN                     | Style transfer with cycle consistency loss                                                                                                                                                                                                                          | 4 bars                    |
+|                   | ChordGAN <br/>[Paper](https://aimc2021.iem.at/wp-content/uploads/2021/06/AIMC_2021_Lu_Dubnov.pdf)                                              | 2021 | Piano roll           | CNN-based GAN           | Stylistic rendering of chords into notes; Chroma feature extraction;                                                                                                                                                                                                | 16 bars                   |
+| Structure         | StructureNet <br/>[Paper](https://ismir2018.ircam.fr/doc/pdfs/126_Paper.pdf)                                                                   | 2018 | Sequence             | RNN                     | Structure-tagging algorithm for creating structure dataset; Duration repeat and duration-interval repeat                                                                                                                                                            | 16 bars                   |
+|                   | SSMGAN <br/>[Paper](https://www.cs.cmu.edu/~jharsh/papers/music_workshop_paper.pdf)                                                            | 2019 | Event                | RNN-CNN-based VAE GAN   | Representing self-repetition with self-similarity; Low dimensional measure embeddings                                                                                                                                                                               | Variable-length           |
+|                   | MusicFrameworks <br/>[Paper](https://archives.ismir.net/ismir2021/paper/000017.pdf)                                                            | 2021 | Event                | Transformer & RNN & CNN | Multi-level repetition and structure; Multi-step generative process                                                                                                                                                                                                 | Full-song-length          |
+|                   | HAT <br/>[Paper](https://arxiv.org/abs/2109.06441)                                                                                             | 2021 | Event                | Transformer             | Harmony (texture and form)-aware learning; Hierarchical structure-enhanced module                                                                                                                                                                                   | Full-song-length          |
+|                   | PopMNet <br/>[Paper](https://www.sciencedirect.com/science/article/pii/S000437022030062X)                                                      | 2020 | Sequence             | RNN & CNN               | Bar-level pairwise relations; Representing structure using Directed acyclic graph; Two stage manner                                                                                                                                                                 | Variable-length           |
+|                   | MELONS <br/>[Paper](https://arxiv.org/abs/2110.05020)                                                                                          | 2022 | Event                | Transformer             | Graph representation of music structure; Eight types of bar-level relations; Multi-step generation                                                                                                                                                                  | Full-song-length          |
+|                   | Museformer <br/>[Paper](https://arxiv.org/abs/2210.10349)                                                                                      | 2022 | Event                | Transformer             | Music repetition structures via bar-level similarity statistic; Fine- and coarse-grained attention                                                                                                                                                                  | Full-song-length          |
+| Sentiment         | [Paper](https://arxiv.org/abs/2103.06125)                                                                                                      | 2019 | Event                | LSTM                    | VGMIDI dataset with valence-arousal (VA) annotation; Sentiment unit within mLSTM                                                                                                                                                                                    | Variable-length           |
+|                   | [Paper](https://www.researchgate.net/publication/345425604_An_Emotional_Symbolic_Music_Generation_System_based_on_LSTM_Networks)               | 2019 | Piano roll           | LSTM                    | Global condition of emotional vectors; Four quadrants of VA emotional space as four emotions                                                                                                                                                                        | 8 bars                    |
+|                   | Bardo Composer <br/>[Paper](https://webdocs.cs.ualberta.ca/~santanad/papers/2020/ferreiraLW20.pdf)                                             | 2020 | Event                | Transformer             | Language model with Stochastic Bi-Objective Beam Search; GPT-2 emotion classifier                                                                                                                                                                                   | Variable-length           |
+|                   | [Paper](https://dorienherremans.com/sites/default/files/2104.13056.pdf)                                                                        | 2021 | Event                | RNN & Transformer       | Calculating valence of chord progression; Seq2seq; Translating conditions into musical events                                                                                                                                                                       | 4-32 bars                 |
+|                   | Music FaderNets <br/>[Paper](https://arxiv.org/abs/2007.15474)                                                                                 | 2020 | Event                | GM-VAE                  | Arousal transfer; Inferring high-level features from latent low-level representations                                                                                                                                                                               | Up to 100 tokens          |
 
 #### 2024
 
@@ -861,7 +968,7 @@ f
 
 #### 2024
 
-1. SongCompoer
+1. SongComposer
    - <img src="images/SongComposer.jpg" width="60%" alt="Image for SongComposer">
 
      Ding, S., Liu, Z., Dong, X., Zhang, P., Qian, R., He, C., Lin, D., & Wang, J. (2024, February 27). 
@@ -1052,6 +1159,15 @@ f
       Applications and Advances of Artificial Intelligence in Music Generation:A Review. arXiv.org. 
     
       [Paper](https://www.arxiv.org/abs/2409.03715)
+
+#### 2023
+
+1. Representations, Algorithms, Evaluations, and Challenges
+      - Ji, S., Yang, X., & Luo, J. (2023. August 25). 
+      A Survey on Deep Learning for Symbolic Music Generation: Representations, Algorithms, Evaluations, and Challenges. 
+      ACM Computing Surveys, 56(1), 1–39.
+      
+      [Paper](https://doi.org/10.1145/3597493)
 
 #### 2021
 
