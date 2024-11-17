@@ -88,11 +88,12 @@ comprehensive and influential works and sources that are in relation to the fiel
 
 > [!NOTE]
 > _Last updated: 17th November 2024_
+>
 > _Last Resource Added: 17th November 2024_
 
-They aim to provide a detailed overview of the evolution of generative music intelligence over the years.
+This collection aims to provide a detailed overview of the evolution of generative music intelligence over the years.
 
-These resources are organized in a reverse chronological order, leading from the most recent to the earliest works.
+The resources are organized in a reverse chronological order, leading from the most recent to the earliest works.
 
 ## License
 
